@@ -34,10 +34,10 @@ const Contact= ()=> {
     
     setLoading(true);
     try{
-      const {data} = await axios.post('http://localhost:3001/api/email', {
+      const {data} = await axios.post(import.meta.env.VITE_URL_API, {
           ...form
       });
-      console.log("DATA DE LA PETICION",data)
+      
       if (data){
         if(data.errors){
           generateError('Error en la peticion')
