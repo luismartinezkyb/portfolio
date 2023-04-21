@@ -7,7 +7,7 @@ import {staggerContainer} from '../utils/motion';
 
 export default function SectionWrapper(Component, idName) {
     
-    return function HOC(){
+    return function HOC(props){
         return <motion.section variants={staggerContainer()}
         initial="hidden"
         viewport={{once:true, amount:0.25}}
@@ -17,7 +17,7 @@ export default function SectionWrapper(Component, idName) {
             <span className='hash-span' id={idName}>
                 &nbsp;
             </span>
-            <Component/>
+            <Component props={props}/>
         </motion.section>
     }
 }

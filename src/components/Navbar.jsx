@@ -1,12 +1,13 @@
 import React, {useEffect, useState} from 'react';
 import { Link } from 'react-router-dom';
-
+import { Switch } from "@material-tailwind/react";
 import {styles} from '../styles';
 import {navLinks} from '../constants';
 import { logo, logo_icon, menu, close } from '../assets';
 
+import { BsFillSunFill, BsMoonFill} from "react-icons/bs";
 
-export default function Navbar() {
+export default function Navbar({version, toggleLite}) {
   const [active, setActive] = useState("")
   const [toggle, setToggle] = useState(false)
 
@@ -24,14 +25,19 @@ export default function Navbar() {
           Luis Mtz &nbsp;<span className='sm:block hidden'>| FullStack Dev</span>
         </p>
         </Link>
-
+        
+        
+        
         <ul className='list-none hidden sm:flex flex-row gap-10'>
           {navLinks.map((Link)=>(
             <li key={Link.id} className={`${active ==Link.title ? "text-white":"text-secondary"} hover:text-white text-[18px] font-medium cursor-pointer`} onClick={()=>setActive(Link.title)}>
               <a href={`#${Link.id}`}>{Link.title}</a>
             </li>
           ))}
+          <li className={`${active ==Link.title ? "text-white":"text-secondary"} hover:text-white text-[18px] font-medium cursor-pointer`} >
 
+            <Switch label={version==='normal'?'Switch to Lite Mode':'Switch to Normal Mode'} id="teal" color="teal" onChange={toggleLite} checked={version==='normal'? false:true} />
+          </li>
         </ul>
 
         <div className='sm:hidden flex flex-1 justify-end items-center'> 
@@ -51,7 +57,7 @@ export default function Navbar() {
                 <a href={`#${Link.id}`}>{Link.title}</a>
               </li>
             ))}
-
+            <li><Switch label={version==='normal'?'Switch to Lite Mode':'Switch to Normal Mode'} id="teal" color="teal" onChange={toggleLite} checked={version==='normal'? false:true} /></li>
           </ul>
         </div>
       </div>

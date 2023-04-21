@@ -1,9 +1,13 @@
 /** @type {import('tailwindcss').Config} */
-export default {
+
+const withMT = require("@material-tailwind/react/utils/withMT");
+
+export default withMT({
   content: [
     "./index.html",
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
+  darkMode: 'class',
   mode: "jit",
   theme: {
     extend: {
@@ -14,6 +18,9 @@ export default {
         "black-100": "#100d25",
         "black-200": "#090325",
         "white-100": "#f3f3f3",
+      },
+      fontFamily: {
+        poppins: ["Poppins", "sans-serif"],
       },
       boxShadow: {
         card: "0px 35px 120px -15px #211e35",
@@ -27,5 +34,5 @@ export default {
     },
   },
   plugins: [],
-}
+})
 
