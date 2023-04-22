@@ -8,11 +8,13 @@ import Works from "./Works";
 import Feedbacks from "./Feedbacks";
 import Contact from "./Contact";
 import CanvasLoader from "./Loader";
+import Me from './Me';
 
 import Footer from "./Footer";
 
 
 export {
+  Me,
   Hero,
   Navbar,
   About,

@@ -28,7 +28,7 @@ export default function Navbar({version, toggleLite}) {
         
         
         
-        <ul className='list-none hidden sm:flex flex-row gap-10'>
+        <ul className='list-none hidden sm:flex flex-row gap-2'>
           {navLinks.map((Link)=>(
             <li key={Link.id} className={`${active ==Link.title ? "text-white":"text-secondary"} hover:text-white text-[18px] font-medium cursor-pointer`} onClick={()=>setActive(Link.title)}>
               <a href={`#${Link.id}`}>{Link.title}</a>
@@ -36,7 +36,7 @@ export default function Navbar({version, toggleLite}) {
           ))}
           <li className={`${active ==Link.title ? "text-white":"text-secondary"} hover:text-white text-[18px] font-medium cursor-pointer`} >
 
-            <Switch label={version==='normal'?'Switch to Lite Mode':'Switch to Normal Mode'} id="teal" color="teal" onChange={toggleLite} checked={version==='normal'? false:true} />
+            <Switch label={version==='normal'?'Lite Mode':'Normal Mode'} id="teal" color="teal" onChange={toggleLite} checked={version==='normal'? false:true} />
           </li>
         </ul>
 

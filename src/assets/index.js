@@ -56,7 +56,30 @@ import twitter from "./twitter.svg";
 import people01 from "./people01.png";
 import people02 from "./people02.png";
 import people03 from "./people03.png";
+
+import graduation from './me/graduation.jpg'
+import me_camping from './me/me_camping.jpg'
+import me_gto from './me/me_gto.jpg'
+import me_mirador from './me/me_mirador.jpg'
+
+import me_mountain from './me/me_mountain.jpg'
+import me_sun from './me/me_sun.jpg'
+import me_tlalpu from './me/me_tlalpu.jpg'
+import me from './me/me.jpg'
+import me2 from './me/me2.jpg'
+import setup from './me/setup.jpeg'
+
 export {
+  graduation,
+  me_camping,
+  me_gto,
+  me_mirador,
+  me,
+  me2,
+  me_sun,
+  me_tlalpu,
+  me_mountain,
+  setup,
   logo,
   logo_icon,
   backend,
