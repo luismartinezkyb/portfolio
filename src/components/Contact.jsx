@@ -40,8 +40,8 @@ const Contact= ({props})=> {
       });
       
       if (data){
-        if(data.errors){
-          generateError('Error en la peticion')
+        if(data.error){
+          generateError(data.error)
           setLoading(false);
         }
         else if(data.message==='success'){
@@ -75,6 +75,7 @@ const Contact= ({props})=> {
               onChange={handleChange}
               name="name" 
               id="name" 
+              required
               className='bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outlined-none border-none font-medium' 
               placeholder="What's your name?"/>
           </label>
@@ -88,6 +89,7 @@ const Contact= ({props})=> {
             onChange={handleChange}
             name="email" 
             id="email" 
+            required
             className='bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outlined-none border-none font-medium' 
             placeholder="What's your email?"/>
           </label>
@@ -102,6 +104,7 @@ const Contact= ({props})=> {
             value={form.message} 
             name="message" 
             id="message" 
+            required
             className='bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outlined-none border-none font-medium' 
             placeholder="What do you want to send?"/>
           </label>

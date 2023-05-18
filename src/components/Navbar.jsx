@@ -22,13 +22,13 @@ export default function Navbar({version, toggleLite}) {
         {/* LOGO IN APP.logo com */}
         <img src={logo} alt="logo" className='w-9 h-9 object-contain'/>
         <p className='text-white text-[18px] font-bold cursor-pointer flex'>
-          Luis Mtz &nbsp;<span className='sm:block hidden'>| FullStack Dev</span>
+          Luis Mtz &nbsp;<span className=' hidden sm:block'>| FullStack Dev</span>
         </p>
         </Link>
         
         
         
-        <ul className='list-none hidden sm:flex flex-row gap-2'>
+        <ul className='list-none hidden lg:flex flex-row gap-5'>
           {navLinks.map((Link)=>(
             <li key={Link.id} className={`${active ==Link.title ? "text-white":"text-secondary"} hover:text-white text-[18px] font-medium cursor-pointer`} onClick={()=>setActive(Link.title)}>
               <a href={`#${Link.id}`}>{Link.title}</a>
@@ -40,7 +40,7 @@ export default function Navbar({version, toggleLite}) {
           </li>
         </ul>
 
-        <div className='sm:hidden flex flex-1 justify-end items-center'> 
+        <div className='lg:hidden flex flex-1 justify-end items-center'> 
             <img src={toggle ? close : menu} alt="menuIcon" className='w-[28px] h-[28px] object-contain cursor-pointer' onClick={()=> setToggle(!toggle)}/>
         </div>
         <div className={`${!toggle ? 'hidden': 'flex'} p-6 black-gradient absolute top-20 right-0 mx-4 my-2 min-w-[140px] z-10 rounded-xl`}>

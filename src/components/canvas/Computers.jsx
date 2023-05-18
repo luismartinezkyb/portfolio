@@ -8,7 +8,7 @@ import { CanvasLoader } from '..';
 
 
 const Computers=({isMobile})=>{
-  const computer = useGLTF('./tux/scene.gltf')
+  const computer = useGLTF('./macbook_pro_2021/scene.gltf')
   return (
     <mesh>
       <hemisphereLight intensity={0.15} groundColor="black"/>
@@ -21,7 +21,7 @@ const Computers=({isMobile})=>{
       shadow-mapSize={1024}
       />
       <primitive object={computer.scene}
-      scale={isMobile? 0.1: 0.1} position={isMobile? [0,-3, -2.2]:[0,-3.25, -1.5]} 
+      scale={isMobile? 10: 30} position={isMobile? [0,-3, -2.2]:[0,-3.25, -1.5]} 
       rotation={[-0.01, -0.2, -0.1]}/>
     </mesh>
   )
@@ -59,7 +59,7 @@ const ComputerCanvas = ()=>{
     camera={{position:[20,3,5], fow:25}}
     gl={{preserveDrawingBuffer:true}}>
       <Suspense fallback={<CanvasLoader/>}>
-        <OrbitControls autoRotateSpeed={10} autoRotate enableZoom={false} maxPolarAngle={Math.PI/2} minPolarAngle={Math.PI/2}/>
+        <OrbitControls autoRotateSpeed={2} autoRotate enableZoom={false} maxPolarAngle={Math.PI/2} minPolarAngle={Math.PI/2}/>
         
         <Computers isMobile={isMobile}/>
       </Suspense>

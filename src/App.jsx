@@ -7,16 +7,16 @@ import "react-toastify/dist/ReactToastify.css";
 
 export default function App() {
 
-  const [version, setVersion] = useState('normal')
+  const [version, setVersion] = useState('lite')
   
 
   useEffect(() =>{
     const lite_version = localStorage.getItem('version')
 
-    console.log(lite_version, "Lo que trae el localStorage")
+    
     if(lite_version===null){
-      setVersion('normal');
-      localStorage.setItem('version','normal');
+      setVersion('lite');
+      localStorage.setItem('version','lite');
     }else{
       
       setVersion(lite_version)
@@ -46,13 +46,13 @@ export default function App() {
           
           <Hero version={version}/>
         </div>
-        <About/>
         <Me/>
+        <About/>
         <Experience/>
         <Tech/>
         <Works/>
         <Feedbacks/>
-        <div className='relative z-0'>
+        <div className={`${version==='normal'?'relative z-0':'bg-hero-pattern bg-cover bg-no-repeat bg-center'}`}>
           <Contact version={version}/>
           {version==='normal'?<StarsCanvas/>:''}
           <Footer/>
