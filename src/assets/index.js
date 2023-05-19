@@ -22,6 +22,9 @@ import tailwind from "./tech/tailwind.png";
 import typescript from "./tech/typescript.png";
 import threejs from "./tech/threejs.svg";
 
+const workana = 'https://raw.githubusercontent.com/luismartinezkyb/repo_images_me/main/workana.png';
+const ibt = 'https://raw.githubusercontent.com/luismartinezkyb/repo_images_me/main/ibt.png';
+const apdevs = 'https://raw.githubusercontent.com/luismartinezkyb/repo_images_me/main/apdevs.png';
 import meta from "./company/meta.png";
 import shopify from "./company/shopify.png";
 import starbucks from "./company/starbucks.png";
@@ -74,7 +77,9 @@ export {
   me_camping,
   me_gto,
   me_mirador,
-  
+  workana,
+  ibt,
+  apdevs,
   me2,
   me_sun,
   me_mountain,

@@ -4,6 +4,7 @@ import { me2, me_mountain } from '../assets';
 import { styles, layout } from '../styles';
 import { ComputersCanvas } from './canvas';
 import {fadeIn, slideIn} from '../utils/motion';
+import { heroText } from '../constants';
 
 export default function Hero({version}) {
   return (
@@ -20,7 +21,9 @@ export default function Hero({version}) {
             <p className={`${styles.heroSubText} mt-2 text-white-100`}>
               
             {/* I have developed a deep understanding of both front-end and back-end development */}
-              Skilled Full Stack Developer with experience developing,<br className='md:block hidden'/> high-performance Backend and Frontend solutions.
+              {heroText[0]}<br className='md:block hidden'/>{ heroText[1]}
+              <br className='md:block hidden'/>
+              {heroText[2]}
             </p>
           </div>
         </div>

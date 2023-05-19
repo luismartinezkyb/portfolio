@@ -23,6 +23,9 @@ import {
   jobit,
   tripguide,
   threejs,
+  ibt,
+  apdevs,
+  workana
 } from "../assets";
 import { people01, people02, people03, facebook, instagram, linkedin, twitter, airbnb, binance, coinbase, dropbox, send, shield, star } from "../assets";
 
@@ -139,7 +142,7 @@ const services = [
     icon: web,
   },
   {
-    title: "Flutter Developer",
+    title: "Cloud Computing with AWS ",
     icon: mobile,
   },
   
@@ -206,22 +209,22 @@ const technologies = [
 
 const experiences = [
   {
-    title: "React.js Developer",
-    company_name: "Starbucks",
-    icon: starbucks,
+    title: "FullStack Developer",
+    company_name: "Innova Business Technology",
+    icon: ibt,
     iconBg: "#383E56",
-    date: "March 2020 - April 2021",
+    date: "Sep 2022 - Actual",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
+      "Developing and maintaining web applications using Laravel, JQuery, PHP, Javascript and other related technologies.",
       "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
       "Implementing responsive design and ensuring cross-browser compatibility.",
       "Participating in code reviews and providing constructive feedback to other developers.",
     ],
   },
   {
-    title: "React Native Developer",
-    company_name: "Tesla",
-    icon: tesla,
+    title: "Problem Solver",
+    company_name: "Freelancer",
+    icon: workana,
     iconBg: "#E6DEDD",
     date: "Jan 2021 - Feb 2022",
     points: [
@@ -233,8 +236,8 @@ const experiences = [
   },
   {
     title: "Web Developer",
-    company_name: "Shopify",
-    icon: shopify,
+    company_name: "APdevs",
+    icon: apdevs,
     iconBg: "#383E56",
     date: "Jan 2022 - Jan 2023",
     points: [
@@ -243,20 +246,7 @@ const experiences = [
       "Implementing responsive design and ensuring cross-browser compatibility.",
       "Participating in code reviews and providing constructive feedback to other developers.",
     ],
-  },
-  {
-    title: "Full stack Developer",
-    company_name: "Meta",
-    icon: meta,
-    iconBg: "#E6DEDD",
-    date: "Jan 2023 - Present",
-    points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
-    ],
-  },
+  }
 ];
 
 const testimonials = [
@@ -352,4 +342,71 @@ const projects = [
   },
 ];
 
-export { services, technologies, experiences, testimonials, projects };
+const heroText=[
+  'Highly skilled and dedicated Full Stack Developer ', 
+  'with 3+ years of experience in designing and developing',
+  'high-performance Backend and Frontend solutions.'
+]
+
+
+const headers = {
+  about:{
+    title:'About Me', 
+    subtitle: "A LITTLE ABOUT MYSELF",
+    text:[
+      `I'm a fullstack developer proficient in both front-end and back-end development, with a strong understanding of software development principles, data structures, and algorithms. `,
+      `Strong problem-solving abilities and a track record of delivering high-quality code on time. Demonstrated expertise in creating robust, scalable, and user-friendly solutions. Always applying modern frontend and backend technologies, frameworks, and tools. Committed to staying up-to-date with emerging technologies and continuously enhancing programming skills.`,
+      "I'm a quick learner and collaborate closely with clients to create efficient, scalable and user-friendly solutions that solve real-world problems.",
+      "I've just graduated from Systems Engineering at the Instituto Tecnológico de México en Celaya #AIEnthusiast"
+    ]
+  },
+  overview:{
+    title:'Overview', 
+    subtitle: 'Introduction',
+    text:[
+      "I'm a software developer with experience in programming languages like Javascript, Typescript, PHP, Dart and expertise in frameworks like React, Nodejs, Laravel, NextJs and currently learning Sveltejs. Experienced with different TechStacks like: MERN, PERN, LARAVEL, NEXTJS, LARAVEL+REACT.",
+      
+      `Proficient in both front-end and back-end development, with a strong understanding of web architecture and design patterns. 
+      Dedicated to writing clean, maintainable code that adheres to industry best practices.`,
+      
+      `Experienced in participating in all stages of the development lifecycle, from requirements gathering and design, to development, testing, and deployment. 
+      Skilled in Agile methodologies and using tools like Jira, Trello, Youtrack and Slack. A proactive problem solver who is passionate about staying up-to-date with the latest technologies and techniques in the field.`,
+      
+    ]
+  },
+  experience:{
+    title:'Work Experience', 
+    subtitle: 'WHAT I HAVE DONE SO FAR',
+    text:[
+    ]
+  },
+  project:{
+    title:'Projects', 
+    subtitle: 'My Work',
+    text:[
+    ]
+  },
+  certification:{
+    title:'My Certifications', 
+    subtitle: 'AND BADGES',
+    text:[
+
+    ]
+  },
+  testimonial:{
+    title:'Testimonials', 
+    subtitle: 'WHAT OTHER SAY',
+    text:[
+      
+    ]
+  },
+  contact:{
+    title:'Testimonials', 
+    subtitle: 'WHAT OTHER SAY',
+    text:[
+      
+    ]
+  }
+}
+
+export { services, technologies, experiences, testimonials, projects, heroText, headers};

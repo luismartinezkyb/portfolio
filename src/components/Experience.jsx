@@ -4,7 +4,7 @@ import {
   VerticalTimelineElement,
 } from "react-vertical-timeline-component";
 import { motion } from "framer-motion";
-
+import { headers } from "../constants";
 import "react-vertical-timeline-component/style.min.css";
 
 import { styles } from "../styles";
@@ -51,8 +51,8 @@ const Experience = () =>{
   return (
     <>
       <motion.div variants={textVariant()}>
-        <p className={styles.sectionSubText}>What i have done so far</p>
-        <h2 className={styles.sectionHeadText}>Work Experience</h2>
+        <p className={styles.sectionSubText}>{headers.experience.subtitle}</p>
+        <h2 className={styles.sectionHeadText}>{headers.experience.title}</h2>
       </motion.div>
       <div className="mt-20 flex flex-col">
         <VerticalTimeline>
