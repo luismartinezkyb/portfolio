@@ -57,27 +57,26 @@ import people01 from "./people01.png";
 import people02 from "./people02.png";
 import people03 from "./people03.png";
 
-import graduation from './me/graduation.jpg'
-import me_camping from './me/me_camping.jpg'
-import me_gto from './me/me_gto.jpg'
-import me_mirador from './me/me_mirador.jpg'
+const graduation= 'https://raw.githubusercontent.com/luismartinezkyb/repo_images_me/main/graduation.jpg'
+const me_camping= 'https://raw.githubusercontent.com/luismartinezkyb/repo_images_me/main/me_camping.jpg'
+const me_gto= 'https://raw.githubusercontent.com/luismartinezkyb/repo_images_me/main/me_gto.jpg'
+const me_mirador= 'https://raw.githubusercontent.com/luismartinezkyb/repo_images_me/main/me_mirador.jpg'
 
-import me_mountain from './me/me_mountain.jpg'
-import me_sun from './me/me_sun.jpg'
-import me_tlalpu from './me/me_tlalpu.jpg'
-import me from './me/me.jpg'
-import me2 from './me/me2.jpg'
-import setup from './me/setup.jpeg'
+const me_mountain= 'https://raw.githubusercontent.com/luismartinezkyb/repo_images_me/main/me_mountain.jpg'
+const me_sun= 'https://raw.githubusercontent.com/luismartinezkyb/repo_images_me/main/me_sun.jpg'
+
+
+const me2 = 'https://raw.githubusercontent.com/luismartinezkyb/repo_images_me/main/me2.jpg'
+const setup = 'https://raw.githubusercontent.com/luismartinezkyb/repo_images_me/main/setup.jpeg';
 
 export {
   graduation,
   me_camping,
   me_gto,
   me_mirador,
-  me,
+  
   me2,
   me_sun,
-  me_tlalpu,
   me_mountain,
   setup,
   logo,
