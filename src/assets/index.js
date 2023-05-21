@@ -71,8 +71,31 @@ const me_sun= 'https://raw.githubusercontent.com/luismartinezkyb/repo_images_me/
 
 const me2 = 'https://raw.githubusercontent.com/luismartinezkyb/repo_images_me/main/me2.jpg'
 const setup = 'https://raw.githubusercontent.com/luismartinezkyb/repo_images_me/main/setup.jpeg';
+const tecno ='https://raw.githubusercontent.com/luismartinezkyb/repo_images_me/main/itcelaya.png';
+
+//LOGOS
+const graphql ='https://raw.githubusercontent.com/luismartinezkyb/repo_images_me/main/graphql.png'
+const pgsql ='https://raw.githubusercontent.com/luismartinezkyb/repo_images_me/main/psql.png'
+const next ='https://raw.githubusercontent.com/luismartinezkyb/repo_images_me/main/nextjss.png'
+const aws ='https://raw.githubusercontent.com/luismartinezkyb/repo_images_me/main/aws.png'
+const flutter ='https://raw.githubusercontent.com/luismartinezkyb/repo_images_me/main/flutter.png'
+const gnu ='https://raw.githubusercontent.com/luismartinezkyb/repo_images_me/main/gnu.png'
+const laravel ='https://raw.githubusercontent.com/luismartinezkyb/repo_images_me/main/laravel.png'
+const firebase ='https://raw.githubusercontent.com/luismartinezkyb/repo_images_me/main/firebase.png'
+const lambda = 'https://raw.githubusercontent.com/luismartinezkyb/repo_images_me/main/lambda.png'
+
 
 export {
+  graphql,
+  pgsql,
+  lambda,
+  next,
+  aws,
+  flutter,
+  gnu,
+  laravel,
+  firebase,
+  tecno,
   graduation,
   me_camping,
   me_gto,

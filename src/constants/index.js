@@ -25,7 +25,18 @@ import {
   threejs,
   ibt,
   apdevs,
-  workana
+  workana,
+  tecno,
+  
+  graphql,
+  pgsql,
+  next,
+  aws,
+  flutter,
+  gnu,
+  laravel,
+  firebase,
+  lambda,
 } from "../assets";
 import { people01, people02, people03, facebook, instagram, linkedin, twitter, airbnb, binance, coinbase, dropbox, send, shield, star } from "../assets";
 
@@ -153,33 +164,10 @@ const services = [
 ];
 
 const technologies = [
-  {
-    name: "HTML 5",
-    icon: html,
-  },
-  {
-    name: "CSS 3",
-    icon: css,
-  },
+  
   {
     name: "JavaScript",
     icon: javascript,
-  },
-  {
-    name: "TypeScript",
-    icon: typescript,
-  },
-  {
-    name: "React JS",
-    icon: reactjs,
-  },
-  {
-    name: "Redux Toolkit",
-    icon: redux,
-  },
-  {
-    name: "Tailwind CSS",
-    icon: tailwind,
   },
   {
     name: "Node JS",
@@ -190,20 +178,74 @@ const technologies = [
     icon: mongodb,
   },
   {
-    name: "Three JS",
-    icon: threejs,
+    name: "PosgreSQL",
+    icon: pgsql,
   },
+  {
+    name: "TypeScript",
+    icon: typescript,
+  },
+  {
+    name: "React JS",
+    icon: reactjs,
+  },
+  {
+    name: "Laravel",
+    icon: laravel,
+  },
+  {
+    name: "AWS Cloud Computing",
+    icon: aws,
+  },
+  {
+    name: "AWS Cloud Computing",
+    icon: lambda,
+  },
+  {
+    name: "NEXT js",
+    icon: next,
+  },
+  {
+    name: "Firebase",
+    icon: firebase,
+  },
+  {
+    name: "GNU",
+    icon: gnu,
+  },
+  
+  {
+    name: "Redux Toolkit",
+    icon: redux,
+  },
+  {
+    name: "HTML 5",
+    icon: html,
+  },
+  {
+    name: "CSS 3",
+    icon: css,
+  },
+  {
+    name: "Tailwind CSS",
+    icon: tailwind,
+  },
+  
   {
     name: "git",
     icon: git,
   },
   {
-    name: "figma",
-    icon: figma,
+    name: "Flutter",
+    icon: flutter,
   },
   {
     name: "docker",
     icon: docker,
+  },
+  {
+    name: "GraphQL",
+    icon: graphql,
   },
 ];
 
@@ -217,8 +259,22 @@ const experiences = [
     points: [
       "Developing and maintaining web applications using Laravel, JQuery, PHP, Javascript and other related technologies.",
       "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
+      "Developed well-structure, maintainable code and thoroughly test your own work.",
+      "I Developed a variety of projects like a Single Sign On, Lambda Functions with API Gateway and a payment window integration.",
       "Participating in code reviews and providing constructive feedback to other developers.",
+    ],
+  },
+  {
+    title: "Software Developer",
+    company_name: "ITC Instituto Tecnológico de Celaya",
+    icon: tecno,
+    iconBg: "#383E56",
+    date: "Jun 2021 - Sep 2022",
+    points: [
+      "I worked with a variety of technologies, learn from scratch how to build a fullstack application with MERN stack",
+      "I built some projects by my own like an Online Store with checkout and payment method support.",
+      "Participating in some contests and open-source projects like a News Blog, a chatbot written in python to help people get to the right place.",
+      "Developed well-structure, maintainable Flutter Projects with the BaaS Firebase, Authentication and authorization support.",
     ],
   },
   {
@@ -226,12 +282,11 @@ const experiences = [
     company_name: "Freelancer",
     icon: workana,
     iconBg: "#E6DEDD",
-    date: "Jan 2021 - Feb 2022",
+    date: "Jun 2021 - Sep 2021",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Maintaining web applications using Html, Css and Javascript Solutions and other related technologies.",
+      "Working on a few projects to solve specific problems without having a full time contract",
+      "Face to face with clients who wants their problem been solved ASAP.",
     ],
   },
   {
@@ -239,12 +294,12 @@ const experiences = [
     company_name: "APdevs",
     icon: apdevs,
     iconBg: "#383E56",
-    date: "Jan 2022 - Jan 2023",
+    date: "Aug 2019 - May 2021",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
+      "I built some nice-friendly web pages with tools like CMS Wordpress, CSS, HTML, PHP.",
+      "PoS Inventory service and installation",
       "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "I developed a wiki to help clients to get started with the PoS, some kind of advising to know how the PoS works",
     ],
   }
 ];
@@ -384,6 +439,7 @@ const headers = {
     title:'Projects', 
     subtitle: 'My Work',
     text:[
+      'Following projects showcases my skills and experience through real-world examples of my work. Each project is briefly described with links to code repositories and some of it with live demos in it. It reflects my ability to solve complex problems, work with different technologies, and manage project effectively with git as tool.'
     ]
   },
   certification:{
