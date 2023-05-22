@@ -1,12 +1,13 @@
-import React from 'react'
+import React, {useContext} from 'react'
 import {motion} from 'framer-motion';
 import { me2, me_mountain } from '../assets';
 import { styles, layout } from '../styles';
 import { ComputersCanvas } from './canvas';
 import {fadeIn, slideIn} from '../utils/motion';
-import { heroText } from '../constants';
+import { LanguageContext } from '../context/LanguageContext';
 
-export default function Hero({version}) {
+export default function Hero() {
+  const {constants} = useContext(LanguageContext);
   return (
     <section className='relative w-full h-screen mx-auto'>
       <div className={`${styles.paddingX} top-[100px] sm:top-[100px] md:top-[100px] xl:top-60 absolute inset-0  w-100 flex flex-col xl:flex-row items-start`}>
@@ -17,19 +18,22 @@ export default function Hero({version}) {
             <div className='w-1 xl:h-80 h-40 violet-gradient'/>
           </div>
           <div>
-            <h1 className={`${styles.heroHeadText} text-white`}>Hi, I'm <span className='text-[#915eff]'> Luis </span></h1>
-            <p className={`${styles.heroSubText} mt-2 text-white-100`}>
+            <h1 className={`${styles.heroHeadText} text-white`}>{constants.headers.me.text[0]} <span className='text-[#915eff]'>{constants.headers.me.text[1]} </span></h1>
+            <div className={`${styles.heroSubText} mt-2 text-white-100`}>
               
-            {/* I have developed a deep understanding of both front-end and back-end development */}
-              {heroText[0]}<br className='md:block hidden'/>{ heroText[1]}
+            {constants.heroText.map((e, i)=>(
+              <div key={i}>
+              <p>{e}</p>
               <br className='md:block hidden'/>
-              {heroText[2]}
-            </p>
+              </div>
+            ))}
+              
+            </div>
           </div>
         </div>
           
-        <motion.div variants={slideIn("right", "tween", 0.2, 1)} className='w-full h-auto justify-center items-center flex flex-1 '>
-          <img src={me2} alt="me2" className="rounded-3xl object-contain xs:w-[400px] sm:w-[400px] md:w-50 lg:w-[400px] opacity-90"/>  
+        <motion.div variants={slideIn("right", "tween", 0.2, 1)} className='w-full  justify-center items-center flex flex-1 '>
+          <img src={me2} alt="me2" className="rounded-3xl object-contain xs:w-[350px] sm:w-[400px] md:w-50 lg:w-[400px] opacity-90"/>  
         </motion.div>
         
       </div>

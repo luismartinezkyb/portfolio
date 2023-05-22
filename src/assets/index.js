@@ -83,9 +83,29 @@ const gnu ='https://raw.githubusercontent.com/luismartinezkyb/repo_images_me/mai
 const laravel ='https://raw.githubusercontent.com/luismartinezkyb/repo_images_me/main/laravel.png'
 const firebase ='https://raw.githubusercontent.com/luismartinezkyb/repo_images_me/main/firebase.png'
 const lambda = 'https://raw.githubusercontent.com/luismartinezkyb/repo_images_me/main/lambda.png'
+const php = 'https://raw.githubusercontent.com/luismartinezkyb/repo_images_me/main/php.png'
+const esL = 'https://raw.githubusercontent.com/luismartinezkyb/repo_images_me/main/spain.png'
+const enL = 'https://raw.githubusercontent.com/luismartinezkyb/repo_images_me/main/english.png'
+const mxL = 'https://raw.githubusercontent.com/luismartinezkyb/repo_images_me/main/mx.png'
+
+
+const hookbank='https://raw.githubusercontent.com/luismartinezkyb/repo_images_me/main/hookbank.png'
+const onlinestore1='https://raw.githubusercontent.com/luismartinezkyb/repo_images_me/main/online_store1.png'
+const onlinestore2='https://raw.githubusercontent.com/luismartinezkyb/repo_images_me/main/online_store2.png'
+const cm1='https://raw.githubusercontent.com/luismartinezkyb/repo_images_me/main/cm1.png'
+const cm2='https://raw.githubusercontent.com/luismartinezkyb/repo_images_me/main/cm2.png'
 
 
 export {
+  hookbank,
+  onlinestore1,
+  onlinestore2,
+  cm1,
+  cm2,
+  esL,
+  mxL,
+  enL,
+  php,
   graphql,
   pgsql,
   lambda,

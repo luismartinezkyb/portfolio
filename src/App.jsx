@@ -12,8 +12,8 @@ export default function App() {
 
   useEffect(() =>{
     const lite_version = localStorage.getItem('version')
-
     
+
     if(lite_version===null){
       setVersion('lite');
       localStorage.setItem('version','lite');
@@ -22,7 +22,7 @@ export default function App() {
       setVersion(lite_version)
     }
   },[])
-
+  
   //Para obtener si esta en lite version o neh
   
   const toggleLite = ()=>{
@@ -42,9 +42,9 @@ export default function App() {
     <BrowserRouter>
       <div className='relative z-0 bg-primary'>
         <div className='bg-hero-pattern bg-cover bg-no-repeat bg-center'>
-          <Navbar toggleLite={toggleLite} version={version}/>
+          <Navbar/>
           
-          <Hero version={version}/>
+          <Hero />
         </div>
         <Me/>
         <About/>

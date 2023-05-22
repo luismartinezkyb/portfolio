@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useContext } from "react";
 import {
   VerticalTimeline,
   VerticalTimelineElement,
@@ -14,6 +14,7 @@ import { experiences } from "../constants";
 import { SectionWrapper } from "../hoc";
 
 import { textVariant } from "../utils/motion";
+import { LanguageContext } from "../context/LanguageContext";
 
 const ExperienceCard= ({experience})=>(
     <VerticalTimelineElement contentStyle={{
@@ -30,7 +31,7 @@ const ExperienceCard= ({experience})=>(
       <div>
         <h3 className="text-white text-[24px] font-bold">{experience.title}</h3>
         <p className="text-secondary text-[16px] font-semibold" style={{margin:0}}>
-          {experience.company_name} | <span className="text-grey">1999-2013</span>
+          {experience.company_name} | <span className="text-grey">{experience.date}</span>
         </p>
       </div>
       
@@ -48,15 +49,16 @@ const ExperienceCard= ({experience})=>(
 
 
 const Experience = () =>{
+  const {constants} = useContext(LanguageContext)
   return (
     <>
       <motion.div variants={textVariant()}>
-        <p className={styles.sectionSubText}>{headers.experience.subtitle}</p>
-        <h2 className={styles.sectionHeadText}>{headers.experience.title}</h2>
+        <p className={styles.sectionSubText}>{constants.headers.experience.subtitle}</p>
+        <h2 className={styles.sectionHeadText}>{constants.headers.experience.title}</h2>
       </motion.div>
       <div className="mt-20 flex flex-col">
         <VerticalTimeline>
-          {experiences.map((experience, index) =>(
+          {constants.experiences.map((experience, index) =>(
             <ExperienceCard key={index} experience={experience}/>
           ))}
         </VerticalTimeline>

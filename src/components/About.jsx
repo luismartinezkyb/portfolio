@@ -1,15 +1,14 @@
-import React from 'react'
+import React, {useContext} from 'react'
 import Tilt from 'react-parallax-tilt';
 import {motion} from 'framer-motion';
 
 import { styles } from '../styles';
-import { services } from '../constants';
+
 
 import {fadeIn, textVariant} from '../utils/motion';
 
 import {SectionWrapper} from '../hoc';
-
-import { headers } from '../constants';
+import { LanguageContext } from '../context/LanguageContext';
 
 const ServiceCard = ({index, title, icon})=>{
   return (
@@ -28,28 +27,29 @@ const ServiceCard = ({index, title, icon})=>{
 }
 
 const About=()=> {
+  const {constants} = useContext(LanguageContext);
   return (
     <>
       <motion.div variants={textVariant()}>
         <p className={styles.sectionSubText}>
-          {headers.overview.subtitle}
+          {constants.headers.overview.subtitle}
           
         </p>
-        <h2 className={styles.sectionHeadText}>{headers.overview.title}</h2>
+        <h2 className={styles.sectionHeadText}>{constants.headers.overview.title}</h2>
       </motion.div>
 
-      <motion.p variants={fadeIn("", "", 0.1, 1)} className='mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]'>
-        {headers.overview.text.map(e=>(
-          <>
+      <motion.div variants={fadeIn("", "", 0.1, 1)} className='mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]'>
+        {constants.headers.overview.text.map((e, index)=>(
+          <p key={index}>
           {e}
           <br />
           <br />
-          </>
+          </p>
         ))}
 
-      </motion.p>
+      </motion.div>
       <div className='mt-20 flex flex-wrap gap-10'>
-        {services.map((service, index)=>(
+        {constants.services.map((service, index)=>(
           <ServiceCard key={index} index={index} {...service}>
             
           </ServiceCard>

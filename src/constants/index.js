@@ -37,8 +37,33 @@ import {
   laravel,
   firebase,
   lambda,
+  php,
+  mxL,
+  enL,
+  esL,
+  cm1,
+    cm2,
+    onlinestore1,
+    hookbank
 } from "../assets";
 import { people01, people02, people03, facebook, instagram, linkedin, twitter, airbnb, binance, coinbase, dropbox, send, shield, star } from "../assets";
+
+export const imagesLanguages={
+  es:esL,
+  en:enL
+}
+export const languagesNav=[
+    {
+      name:'en',
+      title:'English',
+      icon: enL
+    },
+    {
+      name:'es',
+      title:'Spanish',
+      icon: esL
+    }
+  ];
 
 export const navLinks = [
   {
@@ -53,93 +78,94 @@ export const navLinks = [
     id: "contact",
     title: "Contact",
   },
+  {
+    id: "projects",
+    title: "Projects",
+},
 ];
 
 export const footerLinks = [
   {
-      title: "Useful Links",
+      title: "Preview",
       links: [
-          {
-              name: "Content",
-              link: "https://www.hoobank.com/content/",
-          },
-          {
-              name: "How it Works",
-              link: "https://www.hoobank.com/how-it-works/",
-          },
-          {
-              name: "Create",
-              link: "https://www.hoobank.com/create/",
-          },
-          {
-              name: "Explore",
-              link: "https://www.hoobank.com/explore/",
-          },
-          {
-              name: "Terms & Services",
-              link: "https://www.hoobank.com/terms-and-services/",
-          },
+        {
+          name: "About",
+          link: "about",
+        },
+        {
+            name: "Work",
+            link: "work",
+        },
+        {
+            name: "Projects",
+            link: "projects",
+        },
+        {
+            name: "Contact",
+            link: "contact",
+        },
       ],
   },
   {
-      title: "Community",
+      title: "Contact Me",
       links: [
-          {
-              name: "Help Center",
-              link: "https://www.hoobank.com/help-center/",
-          },
-          {
-              name: "Partners",
-              link: "https://www.hoobank.com/partners/",
-          },
-          {
-              name: "Suggestions",
-              link: "https://www.hoobank.com/suggestions/",
-          },
-          {
-              name: "Blog",
-              link: "https://www.hoobank.com/blog/",
-          },
-          {
-              name: "Newsletters",
-              link: "https://www.hoobank.com/newsletters/",
-          },
-      ],
+        {
+            name: "Gmail 1",
+            link: "luismartinezjpg@gmail.com",
+        },
+        {
+            name: "Gmail 2",
+            link: "luisramonmartinezarredondo08@gmail.com",
+        },
+        {
+            name: "Phone Number",
+            link: "Ask for it via email",
+        },
+        {
+            name: "LinkedIn",
+            link: "https://www.linkedin.com/in/luis-martinez-kyb/",
+        },
+        
+    ],
   },
   {
-      title: "Partner",
+      title: "Professional",
       links: [
           {
-              name: "Our Partner",
-              link: "https://www.hoobank.com/our-partner/",
+              name: "See my resume",
+              link: "https://raw.githubusercontent.com/luismartinezkyb/repo_images_me/main/luis_martinez_resume.jpg",
           },
           {
-              name: "Become a Partner",
-              link: "https://www.hoobank.com/become-a-partner/",
+            name: "GitHub",
+            link: "https://github.com/luismartinezkyb",
+          },
+          {
+              name: "Send me a message in slack!",
+              link: "luisramonmartinezarredondo08@gmail.com",
           },
       ],
   },
 ];
 export const socialMedia = [
   {
-      id: "social-media-1",
-      icon: instagram,
-      link: "https://www.instagram.com/",
+    id: "social-media-1",
+    icon: instagram,
+    link: "https://www.instagram.com/luismartinezkyb/",
   },
   {
       id: "social-media-2",
       icon: facebook,
-      link: "https://www.facebook.com/",
+      link: "https://www.facebook.com/Luis.Martinez1805k",
   },
   {
       id: "social-media-3",
       icon: twitter,
-      link: "https://www.twitter.com/",
+      link: "https://twitter.com/Luis_Mkyb",
   },
   {
       id: "social-media-4",
       icon: linkedin,
-      link: "https://www.linkedin.com/",
+      link: "https://www.linkedin.com/in/luis-martinez-kyb/",
   },
 ];
 
@@ -188,6 +214,10 @@ const technologies = [
   {
     name: "React JS",
     icon: reactjs,
+  },
+  {
+    name: "PHP",
+    icon: php,
   },
   {
     name: "Laravel",
@@ -274,6 +304,7 @@ const experiences = [
       "I worked with a variety of technologies, learn from scratch how to build a fullstack application with MERN stack",
       "I built some projects by my own like an Online Store with checkout and payment method support.",
       "Participating in some contests and open-source projects like a News Blog, a chatbot written in python to help people get to the right place.",
+      "I improved my soft skills as a person, as a developer and I learned to work in a team and improve my emotional intelligence",
       "Developed well-structure, maintainable Flutter Projects with the BaaS Firebase, Authentication and authorization support.",
     ],
   },
@@ -330,13 +361,20 @@ const testimonials = [
     image: "https://randomuser.me/api/portraits/women/6.jpg",
   },
 ];
-
 const projects = [
   {
-    name: "Car Rent",
+    name: "Online Store",
     description:
-      "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+      "Es una tienda en linea donde podrás encontrar diferentes productos y solamente podrás ser capaz de agregarlos a tu carrito siempre y cuando estés logueado, tiene soporte para hacer el checkout.",
     tags: [
+      {
+          name: "Nodejs",
+          color: "text-green",
+      },
+      {
+          name: "express",
+          color: "pink-text-gradient",
+      },
       {
         name: "react",
         color: "blue-text-gradient",
@@ -346,54 +384,61 @@ const projects = [
         color: "green-text-gradient",
       },
       {
-        name: "tailwind",
+        name: "materialUI",
         color: "pink-text-gradient",
       },
     ],
-    image: carrent,
-    source_code_link: "https://github.com/",
+    image: onlinestore1,
+    live:null,
+    source_code_link: "hhttps://github.com/luismartinezkyb/onlinestore",
   },
   {
-    name: "Job IT",
+    name: "Single Sign On",
     description:
-      "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
+      "Aplicación que sirve para poder loguear a los usuarios una sola vez y de ahí redirigirlos a sus respectivas entidades o dominios, esto evita que el usuario tenga que loguearse durante cada instancia.",
     tags: [
       {
-        name: "react",
-        color: "blue-text-gradient",
+        name: "laravel",
+        color: "text-red",
       },
       {
         name: "restapi",
         color: "green-text-gradient",
       },
       {
-        name: "scss",
+        name: "php",
         color: "pink-text-gradient",
       },
+      {
+          name: "Jquery",
+          color: "blue-text-gradient",
+        },
     ],
-    image: jobit,
-    source_code_link: "https://github.com/",
+    image: cm2,
+    live:null,
+    source_code_link: "https://github.com/luismartinezkyb",
   },
   {
-    name: "Trip Guide",
+    name: "HookBank portfolio",
     description:
-      "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+      "Pequeña Landing page que muestra información sobre una fintech, puede usarse como plantilla para diferentes proyectos y fue hecha con responsive design.",
     tags: [
       {
         name: "nextjs",
         color: "blue-text-gradient",
       },
       {
-        name: "supabase",
+        name: "tailwindcss",
         color: "green-text-gradient",
       },
       {
-        name: "css",
+        name: "react",
         color: "pink-text-gradient",
       },
     ],
-    image: tripguide,
-    source_code_link: "https://github.com/",
+    image: hookbank,
+    live:'https://luismartinezkyb.github.io/hookbank_portfolio_based/',
+    source_code_link: "https://github.com/luismartinezkyb/hookbank_portfolio_based",
   },
 ];
 
@@ -405,6 +450,12 @@ const heroText=[
 
 
 const headers = {
+  me:{
+      text:[
+          "Hi, I'm",
+          "Luis"
+      ]
+  },
   about:{
     title:'About Me', 
     subtitle: "A LITTLE ABOUT MYSELF",
@@ -421,11 +472,11 @@ const headers = {
     text:[
       "I'm a software developer with experience in programming languages like Javascript, Typescript, PHP, Dart and expertise in frameworks like React, Nodejs, Laravel, NextJs and currently learning Sveltejs. Experienced with different TechStacks like: MERN, PERN, LARAVEL, NEXTJS, LARAVEL+REACT.",
       
-      `Proficient in both front-end and back-end development, with a strong understanding of web architecture and design patterns. 
+      `Proficient in Fullstack development, with a strong understanding of web architecture and design patterns. 
       Dedicated to writing clean, maintainable code that adheres to industry best practices.`,
       
       `Experienced in participating in all stages of the development lifecycle, from requirements gathering and design, to development, testing, and deployment. 
-      Skilled in Agile methodologies and using tools like Jira, Trello, Youtrack and Slack. A proactive problem solver who is passionate about staying up-to-date with the latest technologies and techniques in the field.`,
+      Skilled in Agile methodologies and using tools like Jira, Trello, Youtrack and Slack. A proactive problem solver who is passionate about improving his personal and professional skills.`,
       
     ]
   },
@@ -457,12 +508,27 @@ const headers = {
     ]
   },
   contact:{
-    title:'Testimonials', 
+    title:'Contact', 
+    subtitle: 'Get In Touch',
+    text:[
+      "Your Name",
+      "Your Email",
+      "Your Message"
+    ],
+    text2:[
+      "What's your email",
+      "What's your name",
+      "What do you want to send"
+    ]
+  },
+  footer:{
+    title:'Footer', 
     subtitle: 'WHAT OTHER SAY',
     text:[
-      
+      'This website is made with React and Tailwindcss',
+      '2023© Luis Martinez. All rights reserved.'
     ]
-  }
+  },
 }
 
 export { services, technologies, experiences, testimonials, projects, heroText, headers};
