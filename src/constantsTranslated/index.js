@@ -44,7 +44,11 @@ import {
     cm1,
     cm2,
     onlinestore1,
-    hookbank
+    hookbank,
+    gmail,
+    phone,
+    github,
+    logo
 } from "../assets";
 import { people01, people02, people03, facebook, instagram, linkedin, twitter, airbnb, binance, coinbase, dropbox, send, shield, star } from "../assets";
 
@@ -86,8 +90,8 @@ export const navLinks = [
     },
 ];
   
-export const footerLinks = [
-    {
+export const footerLinks = {
+    preview:{
         title: "Resumen",
         links: [
             {
@@ -109,30 +113,41 @@ export const footerLinks = [
             
         ],
     },
-    {
+    contact:{
         title: "Contáctame",
         links: [
             {
-                name: "Gmail 1",
-                link: "luismartinezjpg@gmail.com",
+                name: "luismartinezjpg@gmail.com",
+                icon: gmail,
+                link: "mailto:luismartinezjpg@gmail.com",
             },
+            
             {
-                name: "Gmail 2",
-                link: "luisramonmartinezarredondo08@gmail.com",
-            },
-            {
-                name: "Número de Telefono",
-                link: "Mándame un correo para envíartelo",
+                name: "Pídemelo por correo",
+                icon:phone,
+                link: "#contact",
             },
             {
                 name: "LinkedIn",
-                link: "https://www.linkedin.com/in/luis-martinez-kyb/",
+                icon:linkedin,
+                link: "https://www.linkedin.com/in/luis-martinez-kyb/"
             },
+            {
+              name: "Ve mi Currículum",
+              icon:logo,
+              link: "https://raw.githubusercontent.com/luismartinezkyb/repo_images_me/main/luis_martinez_cv.jpg",
+            },
+            {
+              name: "Perfil de GitHub",
+              icon:github,
+              link: "https://github.com/luismartinezkyb",
+            },
+            
             
         ],
     },
     
-    {
+    professional:{
         title: "Profesional",
         links: [
             {
@@ -149,7 +164,7 @@ export const footerLinks = [
             },
         ],
     },
-];
+};
 export const socialMedia = [
     {
         id: "social-media-1",

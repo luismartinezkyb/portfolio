@@ -44,7 +44,11 @@ import {
   cm1,
     cm2,
     onlinestore1,
-    hookbank
+    hookbank,
+    gmail,
+    phone,
+    logo,
+    github
 } from "../assets";
 import { people01, people02, people03, facebook, instagram, linkedin, twitter, airbnb, binance, coinbase, dropbox, send, shield, star } from "../assets";
 
@@ -84,8 +88,8 @@ export const navLinks = [
 },
 ];
 
-export const footerLinks = [
-  {
+export const footerLinks = {
+  preview:{
       title: "Preview",
       links: [
         {
@@ -106,46 +110,40 @@ export const footerLinks = [
         },
       ],
   },
-  {
+  contact:{
       title: "Contact Me",
       links: [
         {
-            name: "Gmail 1",
-            link: "luismartinezjpg@gmail.com",
-        },
-        {
-            name: "Gmail 2",
-            link: "luisramonmartinezarredondo08@gmail.com",
-        },
-        {
-            name: "Phone Number",
-            link: "Ask for it via email",
-        },
-        {
-            name: "LinkedIn",
-            link: "https://www.linkedin.com/in/luis-martinez-kyb/",
+            name: "luismartinezjpg@gmail.com",
+            icon:gmail,
+            link: "mailto:luismartinezjpg@gmail.com",
         },
         
+        {
+            name:"Ask for it via email",
+            icon:phone,
+            link: "#contact",
+        },
+        {
+          name: "LinkedIn",
+          icon:linkedin,
+          link: "https://www.linkedin.com/in/luis-martinez-kyb/"
+      },
+        {
+          name: "See my resume",
+          icon:logo,
+          link: "https://raw.githubusercontent.com/luismartinezkyb/repo_images_me/main/luis_martinez_cv.jpg",
+        },
+        {
+          name: "GitHub profile",
+          icon:github,
+          link: "https://github.com/luismartinezkyb",
+        },
+        
+        
     ],
-  },
-  {
-      title: "Professional",
-      links: [
-          {
-              name: "See my resume",
-              link: "https://raw.githubusercontent.com/luismartinezkyb/repo_images_me/main/luis_martinez_resume.jpg",
-          },
-          {
-            name: "GitHub",
-            link: "https://github.com/luismartinezkyb",
-          },
-          {
-              name: "Send me a message in slack!",
-              link: "luisramonmartinezarredondo08@gmail.com",
-          },
-      ],
-  },
-];
+  }
+};
 export const socialMedia = [
   {
     id: "social-media-1",

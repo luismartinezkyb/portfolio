@@ -1,6 +1,7 @@
 import React, {useState, useRef, useEffect, useContext} from 'react';
 import {motion} from 'framer-motion';
 import axios from 'axios';
+import { Switch } from "@material-tailwind/react";
 import emailjs from '@emailjs/browser';
 import {ToastContainer, toast} from 'react-toastify'
 import { styles } from '../styles';
@@ -68,6 +69,7 @@ const Contact= ({props})=> {
       <motion.div variants={slideIn('left', "tween", 0.2, 1)} className='flex-[0.75] bg-black-100 p-8 rounded-2xl'>
         <p className={styles.sectionSubText}>{constants.headers.contact.subtitle}</p>
         <h3 className={styles.sectionHeadText}>{constants.headers.contact.title}</h3>
+        <Switch label={props.version==='lite'?'Activame!':'lite'} id="teal" color="teal" onChange={props.toggleLite} checked={props.version==='normal'?true:false}/>
         <form ref={formref} onSubmit={handleSubmit} className='mt-12 flex flex-col gap-8'>
           <label htmlFor="name" className='flex flex-col'>
               <span className='text-white font-medium mb-4'>{constants.headers.contact.text[0]}</span>

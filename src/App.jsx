@@ -12,7 +12,7 @@ export default function App() {
 
   useEffect(() =>{
     const lite_version = localStorage.getItem('version')
-    
+    console.log(lite_version)
 
     if(lite_version===null){
       setVersion('lite');
@@ -26,6 +26,7 @@ export default function App() {
   //Para obtener si esta en lite version o neh
   
   const toggleLite = ()=>{
+    console.log("HOLA")
     if(version==='normal'){
       setVersion('lite');
       localStorage.setItem('version','lite');
@@ -37,6 +38,7 @@ export default function App() {
     }
     
   }
+  console.log(version)
   
   return (
     <BrowserRouter>
@@ -53,7 +55,7 @@ export default function App() {
         <Works/>
         <Feedbacks/>
         <div className={`${version==='normal'?'relative z-0':'bg-hero-pattern bg-cover bg-no-repeat bg-center'}`}>
-          <Contact version={version}/>
+          <Contact toggleLite={toggleLite} version={version}/>
           {version==='normal'?<StarsCanvas/>:''}
           <Footer/>
         </div>

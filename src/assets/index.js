@@ -90,13 +90,18 @@ const mxL = 'https://raw.githubusercontent.com/luismartinezkyb/repo_images_me/ma
 
 
 const hookbank='https://raw.githubusercontent.com/luismartinezkyb/repo_images_me/main/hookbank.png'
-const onlinestore1='https://raw.githubusercontent.com/luismartinezkyb/repo_images_me/main/online_store1.png'
-const onlinestore2='https://raw.githubusercontent.com/luismartinezkyb/repo_images_me/main/online_store2.png'
+const onlinestore1='https://raw.githubusercontent.com/luismartinezkyb/repo_images_me/main/online_store3.png'
+const onlinestore2='https://raw.githubusercontent.com/luismartinezkyb/repo_images_me/main/online_store3.png'
 const cm1='https://raw.githubusercontent.com/luismartinezkyb/repo_images_me/main/cm1.png'
 const cm2='https://raw.githubusercontent.com/luismartinezkyb/repo_images_me/main/cm2.png'
 
+const phone='https://raw.githubusercontent.com/luismartinezkyb/repo_images_me/main/phone.png'
+const gmail='https://raw.githubusercontent.com/luismartinezkyb/repo_images_me/main/gmail.png'
+
 
 export {
+  gmail,
+  phone,
   hookbank,
   onlinestore1,
   onlinestore2,
