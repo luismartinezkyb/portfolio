@@ -9,7 +9,7 @@ import Feedbacks from "./Feedbacks";
 import Contact from "./Contact";
 import CanvasLoader from "./Loader";
 import Me from './Me';
-
+import Certifications from './Certifications';
 import Footer from "./Footer";
 
 
@@ -28,5 +28,6 @@ export {
   BallCanvas, 
   ComputersCanvas, 
   StarsCanvas,
-  Footer
+  Footer,
+  Certifications
 };

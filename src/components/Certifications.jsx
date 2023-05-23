@@ -6,6 +6,10 @@ import { github } from "../assets";
 import { SectionWrapper } from "../hoc";
 import { projects, headers } from "../constants";
 import { fadeIn, textVariant } from "../utils/motion";
+import { useContext } from "react";
+import { LanguageContext } from "../context/LanguageContext";
+
+
 
 const ProjectCard = ({
   index,
@@ -62,18 +66,19 @@ const ProjectCard = ({
 };
 
 const Certifications = () => {
+  const {constants}= useContext(LanguageContext);
   return (
     <>
       <motion.div variants={textVariant()}>
-        <p className={styles.sectionSubText}>{headers.project.subtitle}</p>
-        <h2 className={styles.sectionHeadText}>{headers.project.title}</h2>
+        <p className={styles.sectionSubText}>{constants.headers.certification.subtitle}</p>
+        <h2 className={styles.sectionHeadText}>{constants.headers.certification.title}</h2>
       </motion.div>
       <div className="w-full flex">
         <motion.p
           variants={fadeIn("", "", 0.1, 1)}
           className="mt-3 max-w-3xl leading-[30px] text-secondary text-[17px]"
         >
-          {headers.project.text.map((e) => e)}
+          {constants.headers.certification.text.map((e) => e)}
         </motion.p>
       </div>
       <div className="mt-20 flex flex-wrap gap-7">

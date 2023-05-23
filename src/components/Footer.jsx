@@ -40,7 +40,8 @@ const Footer = () =>{
                 {constants.footerLinks.contact.links.map((linkItem, index)=>(
                   <li key={index} className={`font-poppins font-normal text-[16px] leading-[24px] text-dimWhite break-all hover:text-secondary cursor-pointer ${index!== constants.footerLinks.contact.links.length-1 ? 'mb-4': 'mb-0'} flex flex-row gap-2`}>
                     <img src={linkItem.icon} alt={linkItem.name} className="w-[21px] object-contain"/>
-                    <a  href={linkItem.link==='#'?'#contact':linkItem.link}>{linkItem.name}</a>
+                    
+                    <a  target={linkItem.link==='#contact'?'_self':"_blank"} href={linkItem.link==='#'?'#contact':linkItem.link}>{linkItem.name}</a>
                     
                   </li>
                 ))}

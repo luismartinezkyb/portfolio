@@ -355,32 +355,17 @@ const services = [
         ],
     }
   ];
-  
   const testimonials = [
     {
       testimonial:
-        "I thought it was impossible to make a website as beautiful as our product, but Rick proved me wrong.",
-      name: "Sara Lee",
-      designation: "CFO",
-      company: "Acme Co",
-      image: "https://randomuser.me/api/portraits/women/4.jpg",
+        `
+        Luis es sin duda un excelente ser humano en el cual puedes confiar y tener la seguridad que dará su 100% en cada nuevo reto que se le presente, mentalidad ganadora, el optimismo y su gran liderazgo a hecho que Luis sea un elemento importante en cualquier equipo además busca estar a la vanguardia de las mejores tecnologías y está dispuesto a transmitir ese conocimiento para ayudar a los demás`,
+      name: "Andrés García",
+      designation: " Software Engineer | Flutter Developer | Vue.js Developer ",
+      company: "IBT",
+      image: "https://media.licdn.com/dms/image/C5603AQG-aQa7eaGGYQ/profile-displayphoto-shrink_400_400/0/1653275025311?e=1690416000&v=beta&t=3c_7vziJ3QwHlTy70ViMpZPF7e47Y1UoBL8UCp5oRLs",
     },
-    {
-      testimonial:
-        "I've never met a web developer who truly cares about their clients' success like Rick does.",
-      name: "Chris Brown",
-      designation: "COO",
-      company: "DEF Corp",
-      image: "https://randomuser.me/api/portraits/men/5.jpg",
-    },
-    {
-      testimonial:
-        "After Rick optimized our website, our traffic increased by 50%. We can't thank them enough!",
-      name: "Lisa Wang",
-      designation: "CTO",
-      company: "456 Enterprises",
-      image: "https://randomuser.me/api/portraits/women/6.jpg",
-    },
+    
   ];
   
   const projects = [
@@ -472,8 +457,11 @@ const heroText=[
 'involucrado en tecnologías AWS.'
 
 ]
-  
-  
+const contactHeaders= [
+  'Activa la magia!',
+  'Volver a lite'
+]  
+
 const headers = {
     me:{
         text:[
@@ -521,7 +509,8 @@ const headers = {
       title:'Mis Certificaciones', 
       subtitle: 'E insignias',
       text:[
-  
+        "Estas son unas de mis cerficaciones que he obtenido en sitios online, desde AWS cloud foundations, hasta insignias de Codewars, por favor, visita mi perfil en cada uno de estos sitios para conocer más sobre mi trabajo."
+        
       ]
     },
     testimonial:{
@@ -556,5 +545,5 @@ const headers = {
     },
   }
   
-  export { services, technologies, experiences, testimonials, projects, heroText, headers};
+  export { services, technologies, experiences, testimonials, projects, heroText, headers, contactHeaders};
   

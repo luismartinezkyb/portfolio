@@ -132,7 +132,7 @@ export const footerLinks = {
         {
           name: "See my resume",
           icon:logo,
-          link: "https://raw.githubusercontent.com/luismartinezkyb/repo_images_me/main/luis_martinez_cv.jpg",
+          link: "https://raw.githubusercontent.com/luismartinezkyb/repo_images_me/main/luis_martinez_resumes.jpg",
         },
         {
           name: "GitHub profile",
@@ -336,34 +336,21 @@ const experiences = [
 const testimonials = [
   {
     testimonial:
-      "I thought it was impossible to make a website as beautiful as our product, but Rick proved me wrong.",
-    name: "Sara Lee",
-    designation: "CFO",
-    company: "Acme Co",
-    image: "https://randomuser.me/api/portraits/women/4.jpg",
+      `
+      Luis es sin duda un excelente ser humano en el cual puedes confiar y tener la seguridad que dará su 100% en cada nuevo reto que se le presente, mentalidad ganadora, el optimismo y su gran liderazgo a hecho que Luis sea un elemento importante en cualquier equipo además busca estar a la vanguardia de las mejores tecnologías y está dispuesto a transmitir ese conocimiento para ayudar a los demás`,
+    name: "Andrés García",
+    designation: " Software Engineer | Flutter Developer | Vue.js Developer ",
+    company: "IBT",
+    image: "https://media.licdn.com/dms/image/C5603AQG-aQa7eaGGYQ/profile-displayphoto-shrink_400_400/0/1653275025311?e=1690416000&v=beta&t=3c_7vziJ3QwHlTy70ViMpZPF7e47Y1UoBL8UCp5oRLs",
   },
-  {
-    testimonial:
-      "I've never met a web developer who truly cares about their clients' success like Rick does.",
-    name: "Chris Brown",
-    designation: "COO",
-    company: "DEF Corp",
-    image: "https://randomuser.me/api/portraits/men/5.jpg",
-  },
-  {
-    testimonial:
-      "After Rick optimized our website, our traffic increased by 50%. We can't thank them enough!",
-    name: "Lisa Wang",
-    designation: "CTO",
-    company: "456 Enterprises",
-    image: "https://randomuser.me/api/portraits/women/6.jpg",
-  },
+  
 ];
 const projects = [
   {
     name: "Online Store",
     description:
-      "Es una tienda en linea donde podrás encontrar diferentes productos y solamente podrás ser capaz de agregarlos a tu carrito siempre y cuando estés logueado, tiene soporte para hacer el checkout.",
+
+      "Online Store where you can find several products and only be able to buy them or make the checkout when you're logged in, it has cart, checkout, login, payment support.",
     tags: [
       {
           name: "Nodejs",
@@ -393,7 +380,7 @@ const projects = [
   {
     name: "Single Sign On",
     description:
-      "Aplicación que sirve para poder loguear a los usuarios una sola vez y de ahí redirigirlos a sus respectivas entidades o dominios, esto evita que el usuario tenga que loguearse durante cada instancia.",
+      "Application that enables users to access multiple systems and applications with a single set of login credentials. It eliminates the need for users to remember and manage separate usernames and passwords for each individual system or application they use.",
     tags: [
       {
         name: "laravel",
@@ -419,7 +406,7 @@ const projects = [
   {
     name: "HookBank portfolio",
     description:
-      "Pequeña Landing page que muestra información sobre una fintech, puede usarse como plantilla para diferentes proyectos y fue hecha con responsive design.",
+      "Small landing Page that show my skills with tailwindcss, react and responsive design, it can be used like a template for other projects.",
     tags: [
       {
         name: "nextjs",
@@ -446,6 +433,10 @@ const heroText=[
   'high-performance Backend and Frontend solutions.'
 ]
 
+const contactHeaders= [
+  'See the magic!',
+  'Back to lite mode'
+]
 
 const headers = {
   me:{
@@ -495,7 +486,7 @@ const headers = {
     title:'My Certifications', 
     subtitle: 'AND BADGES',
     text:[
-
+      "This are some of the certifications i have, from aws badges to Codewars and freecodecamp certifications and badges, please, visit each website to know more about my profile"
     ]
   },
   testimonial:{
@@ -529,4 +520,4 @@ const headers = {
   },
 }
 
-export { services, technologies, experiences, testimonials, projects, heroText, headers};
+export { services, technologies, experiences, testimonials, projects, heroText, headers, contactHeaders};
