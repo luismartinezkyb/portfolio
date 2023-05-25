@@ -34,13 +34,8 @@ import carrent from "./carrent.png";
 import jobit from "./jobit.png";
 import tripguide from "./tripguide.png";
 
-
-import airbnb from "./airbnb.png";
-import bill from "./bill.png";
-import binance from "./binance.png";
 import card from "./card.png";
-import coinbase from "./coinbase.png";
-import dropbox from "./dropbox.png";
+
 
 import quotes from "./quotes.svg";
 import robot from "./robot.png";
@@ -56,9 +51,7 @@ import facebook from "./facebook.svg";
 import instagram from "./instagram.svg";
 import linkedin from "./linkedin.svg";
 import twitter from "./twitter.svg";
-import people01 from "./people01.png";
-import people02 from "./people02.png";
-import people03 from "./people03.png";
+
 
 const graduation= 'https://raw.githubusercontent.com/luismartinezkyb/repo_images_me/main/graduation.jpg'
 const me_camping= 'https://raw.githubusercontent.com/luismartinezkyb/repo_images_me/main/me_camping.jpg'
@@ -98,8 +91,22 @@ const cm2='https://raw.githubusercontent.com/luismartinezkyb/repo_images_me/main
 const phone='https://raw.githubusercontent.com/luismartinezkyb/repo_images_me/main/phone.png'
 const gmail='https://raw.githubusercontent.com/luismartinezkyb/repo_images_me/main/gmail.png'
 
+const cyberops='https://raw.githubusercontent.com/luismartinezkyb/repo_images_me/main/cyberops.png'
+const scrum='https://raw.githubusercontent.com/luismartinezkyb/repo_images_me/main/scrum.png'
+const devnet='https://raw.githubusercontent.com/luismartinezkyb/repo_images_me/main/devnet.png'
+const lifelong='https://raw.githubusercontent.com/luismartinezkyb/repo_images_me/main/lifelong.png'
+const ccna='https://raw.githubusercontent.com/luismartinezkyb/repo_images_me/main/ccna.png'
+const academyaws='https://raw.githubusercontent.com/luismartinezkyb/repo_images_me/main/academyaws.png'
+const iiot='https://raw.githubusercontent.com/luismartinezkyb/repo_images_me/main/iiot.png'
 
 export {
+  iiot,
+  cyberops,
+  scrum,
+  ccna,
+  lifelong,
+  academyaws,
+  devnet,
   gmail,
   phone,
   hookbank,
@@ -161,12 +168,11 @@ export {
   carrent,
   jobit,
   tripguide,
-  airbnb,
-  bill,
-  binance,
+  
+  
+  
   card,
-  coinbase,
-  dropbox,
+  
   
   quotes,
   robot,
@@ -183,7 +189,5 @@ export {
   instagram,
   linkedin,
   twitter,
-  people01,
-  people02,
-  people03,
+  
 };

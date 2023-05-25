@@ -26,12 +26,14 @@ export default function App() {
   //Para obtener si esta en lite version o neh
   
   const toggleLite = ()=>{
-    console.log("HOLA")
+    
     if(version==='normal'){
       setVersion('lite');
       localStorage.setItem('version','lite');
       console.log("you've just changed the version to lite")
     }else{
+      window.location.hash = '#contact';
+      window.location.reload();
       setVersion('normal');
       localStorage.setItem('version','normal');
       console.log("you've just changed the version normal")

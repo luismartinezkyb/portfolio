@@ -1,4 +1,11 @@
 import {
+  iiot,
+  cyberops,
+  scrum,
+  ccna,
+  lifelong,
+  academyaws,
+  devnet,
     mobile,
     backend,
     creator,
@@ -50,7 +57,7 @@ import {
     github,
     logo
 } from "../assets";
-import { people01, people02, people03, facebook, instagram, linkedin, twitter, airbnb, binance, coinbase, dropbox, send, shield, star } from "../assets";
+import {  facebook, instagram, linkedin, twitter } from "../assets";
 
 export const imagesLanguages={
     es:esL,
@@ -450,6 +457,178 @@ const services = [
   ];
 
 
+
+
+const certifications = [
+  {
+    name:'AWS Academy Graduate - AWS Academy Cloud Foundations',
+    image:academyaws,
+    public_url:'https://www.credly.com/badges/690cc7a8-1760-4f7a-a7cc-7428f86ee6bc/public_url',
+    description: `Earners of this badge have taken the AWS Academy Cloud Foundations course.`,
+    tags: [
+      {
+          name: "architecture",
+          color: "text-green",
+      },
+      {
+          name: "aws",
+          color: "pink-text-gradient",
+      },
+      {
+        name: "devops",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "cloud",
+        color: "green-text-gradient",
+      },
+      
+    ],
+  },
+  {
+    name:'Cisco CyberOps Associate',
+    image:cyberops,
+    public_url:'https://www.credly.com/badges/d4ba0b6c-8bbf-45df-9705-7ee00c419759/public_url',
+    description: `Cisco verifies the earner of this badge successfully completed the CyberOps Associate course. The holder of this student-level credential has a broad understanding of Security Operations. They developed problem-solving skills to detect and analyze intrusions and monitor the network by completing up to 30 hours of 52 hands-on labs using virtual machines (Security Onion - ELK) and/or Cisco Packet Tracer.`,
+    tags: [
+      {
+          name: "cisco",
+          color: "text-green",
+      },
+      {
+          name: "devops",
+          color: "pink-text-gradient",
+      },
+      {
+        name: "network",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "cybersecurity",
+        color: "green-text-gradient",
+      },
+      
+    ],
+  },
+  {
+    name:'Lifelong Learning',
+    image:lifelong,
+    public_url:'https://www.credly.com/badges/2448e382-69f6-4a94-802e-1474486a3e4e/public_url',
+    description: "This badge has been issued to the candidates who have demonstrated their unwavering commitment to lifelong learning, which is vitally important in today's ever-changing and expanding digital world. It also identifies the qualities of an open, disciplined, and constantly evolving mind, capable of using and contributing knowledge to develop a more equal and better world.",
+    tags: [
+      {
+          name: "lifelong learning",
+          color: "text-green",
+      },
+      {
+          name: "carrer development",
+          color: "pink-text-gradient",
+      },
+      {
+        name: "certiprof",
+        color: "blue-text-gradient",
+      },
+      
+    ],
+  },
+  {
+    name:'Introduction to IoT',
+    image:iiot,
+    public_url:'https://www.credly.com/badges/d535b624-b630-44eb-881a-31a8c4f32a56/public_url',
+    description: "Cisco verifies the earner of this badge successfully completed the Introduction to Internet of Things course. The holder of this student-level credential has introductory knowledge of IoT and has an understanding how it enables the Digital Transformation along with emerging technologies such as data analytics, AI/ML and the increased attention on cybersecurity. They understand the importance of Intent Based Networking to be able to connect and secure tens of billions of new devices with ease.",
+    tags: [
+      {
+          name: "iot",
+          color: "text-green",
+      },
+      {
+          name: "networking",
+          color: "pink-text-gradient",
+      },
+      {
+        name: "raspberry pi",
+        color: "blue-text-gradient",
+      },
+      
+      
+    ],
+  },
+  {
+    name:'CCNA: Introduction to Networks',
+    image:ccna,
+    public_url:'https://www.credly.com/badges/b12ab365-b616-489a-bcd9-5b7028aa2780/public_url',
+    description: "Cisco verifies the earner of this badge successfully completed the Introduction to Networks course and achieved this student level credential. Earner has knowledge of networking including IP addressing, how physical, data link protocols support Ethernet, can configure connectivity between switches, routers and end devices to provide access to local and remote resources. Earner participated in up to 54 labs and accumulated up to 14 hours of hands-on labs using Cisco hardware or Packet Tracer tool",
+    tags: [
+      {
+          name: "ethernet",
+          color: "text-green",
+      },
+      {
+          name: "network fundamentals",
+          color: "pink-text-gradient",
+      },
+      {
+        name: "switching",
+        color: "blue-text-gradient",
+      },
+      
+      
+    ],
+  },
+  {
+    name:'DevNet Associate',
+    image:devnet,
+    public_url:'https://www.credly.com/badges/9cbf55ef-745c-432e-aafb-7ab5c1a3c65b/public_url',
+    description: "Cisco verifies the earner of this badge successfully completed the DevNet Associate course, completed 25+ hands-on labs using a virtual lab environment and achieved this student level credential. The holder of this credential has a broad understanding in the areas of Python coding, using Linux, Cisco DevNet, Software Development and Design, Understanding and Using APIs, Network Fundamentals, Application Deployment and Security, Infrastructure and Automation and Cisco Platforms and Development.",
+    tags: [
+      {
+          name: "JSON",
+          color: "text-green",
+      },
+      {
+          name: "PYTHON",
+          color: "pink-text-gradient",
+      },
+      {
+        name: "CLOUD",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "devops",
+        color: "green-text-gradient",
+      },
+      
+    ],
+  },
+  
+  {
+    name:'Scrum Foundation Professional Certificate - SFPC™',
+    image:scrum,
+    public_url:'https://www.credly.com/badges/d2da10f9-5960-4145-9f41-d4bcc1e501c9/public_url',
+    description: "Scrum Foundation Professional Certificate holders have developed the entry-level skills in Scrum that endorses their fundamental knowledge in this framework. They have demonstrated an understanding of the empirical Scrum pillars of transparency, inspection, and adaptation. Their primary focus is on the work of the Sprint to make the best possible progress toward these goals.",
+    tags: [
+      {
+          name: "agile",
+          color: "text-green",
+      },
+      {
+          name: "scrum",
+          color: "pink-text-gradient",
+      },
+      {
+        name: "agile practices",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "teams",
+        color: "green-text-gradient",
+      },
+      
+    ],
+  },
+  
+];
+
 const heroText=[
 'Fullstack Developer altamente dedicado y calificado', 
 'con más de 3+ años de experiencia desarrollando y construyendo',
@@ -545,5 +724,5 @@ const headers = {
     },
   }
   
-  export { services, technologies, experiences, testimonials, projects, heroText, headers, contactHeaders};
+  export { services, technologies, experiences, testimonials, projects, heroText, headers, contactHeaders, certifications};
   

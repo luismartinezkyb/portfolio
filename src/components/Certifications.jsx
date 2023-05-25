@@ -17,7 +17,7 @@ const ProjectCard = ({
   description,
   tags,
   image,
-  source_code_link,
+  public_url,
 }) => {
   return (
     <motion.div variants={fadeIn("up", "spring", index * 0.5, 0.75)}>
@@ -38,7 +38,7 @@ const ProjectCard = ({
         </div>
         <div className="absolute inset-0 justify-end card-img_hover flex m-3">
           <div
-            onClick={() => window.open(source_code_link, "_blank")}
+            onClick={() => window.open(public_url, "_blank")}
             className="black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer"
           >
             <img
@@ -79,11 +79,12 @@ const Certifications = () => {
           className="mt-3 max-w-3xl leading-[30px] text-secondary text-[17px]"
         >
           {constants.headers.certification.text.map((e) => e)}
+          
         </motion.p>
       </div>
       <div className="mt-20 flex flex-wrap gap-7">
-        {projects.map((project, index) => (
-          <ProjectCard key={`project-${index}`} index={index} {...project} />
+        {constants.certifications.map((project, index) => (
+          <ProjectCard key={`cert-${index}`} index={index} {...project} />
         ))}
       </div>
     </>

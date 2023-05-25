@@ -69,7 +69,7 @@ const Contact= ({props})=> {
       <motion.div variants={slideIn('left', "tween", 0.2, 1)} className='flex-[0.75] bg-black-100 p-8 rounded-2xl'>
         <p className={styles.sectionSubText}>{constants.headers.contact.subtitle}</p>
         <h3 className={styles.sectionHeadText}>{constants.headers.contact.title}</h3>
-        {/* <Switch label={props.version==='lite'?constants.contactHeaders[0]:constants.contactHeaders[1]} id="teal" color="teal" onChange={props.toggleLite} checked={props.version==='normal'?true:false}/> */}
+        <Switch label={props.version==='lite'?constants.contactHeaders[0]:constants.contactHeaders[1]} id="teal" color="teal" onChange={props.toggleLite} checked={props.version==='normal'?true:false}/>
         <form ref={formref} onSubmit={handleSubmit} className='mt-12 flex flex-col gap-8'>
           <label htmlFor="name" className='flex flex-col'>
               <span className='text-white font-medium mb-4'>{constants.headers.contact.text[0]}</span>
