@@ -1,4 +1,15 @@
 import {
+  codewarsB,
+  codewarsB2,
+
+  githubB,
+  peopleT1,
+  freecode3,
+  codewars,
+  freecode1,
+  freecode2,
+  cert_api,
+  cert_js,
   iiot,
   cyberops,
   scrum,
@@ -194,6 +205,21 @@ export const socialMedia = [
         link: "https://www.linkedin.com/in/luis-martinez-kyb/",
     },
 ];
+const badges2 = [
+  {
+    title: "Soluciones de CodewStars ",
+    icon: codewarsB,
+    public_url:'https://www.codewars.com/users/luismartinezkyb',
+    image:codewars
+  },
+  {
+    title: "Stats en Github ",
+    icon: githubB,
+    public_url:'https://github.com/luismartinezkyb/codewars',
+    image:codewars
+  },
+  
+];
 
 const services = [
     {
@@ -213,7 +239,7 @@ const services = [
         title: "Configuración y administración de Servidores",
         icon: creator,
     },
-  ];
+];
   
   const technologies = [
     {
@@ -370,7 +396,7 @@ const services = [
       name: "Andrés García",
       designation: " Software Engineer | Flutter Developer | Vue.js Developer ",
       company: "IBT",
-      image: "https://media.licdn.com/dms/image/C5603AQG-aQa7eaGGYQ/profile-displayphoto-shrink_400_400/0/1653275025311?e=1690416000&v=beta&t=3c_7vziJ3QwHlTy70ViMpZPF7e47Y1UoBL8UCp5oRLs",
+      image: peopleT1,
     },
     
   ];
@@ -485,6 +511,53 @@ const certifications = [
       
     ],
   },
+  
+  {
+    name:'JavaScript Algorithms and Data Structures',
+    image:freecode2,
+    public_url:'https://www.freecodecamp.org/certification/luismartinez/javascript-algorithms-and-data-structures',
+    description: `Developer Certification, representing approximately 300 hours of coursework.`,
+    tags: [
+      {
+          name: "javascript",
+          color: "text-green",
+      },
+      {
+          name: "algorithms",
+          color: "pink-text-gradient",
+      },
+      {
+        name: "data-structures",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "ES6+",
+        color: "green-text-gradient",
+      },
+      
+    ],
+  },
+  {
+    name:'Back End Development and APIs',
+    image:freecode2,
+    public_url:'https://www.freecodecamp.org/certification/luismartinez/back-end-development-and-apis',
+    description: "Developer Certification, representing approximately 300 hours of coursework.",
+    tags: [
+      {
+          name: "APIs",
+          color: "text-green",
+      },
+      {
+          name: "Backend",
+          color: "pink-text-gradient",
+      },
+      {
+        name: "mongodb",
+        color: "blue-text-gradient",
+      },
+      
+    ],
+  },
   {
     name:'Cisco CyberOps Associate',
     image:cyberops,
@@ -506,27 +579,6 @@ const certifications = [
       {
         name: "cybersecurity",
         color: "green-text-gradient",
-      },
-      
-    ],
-  },
-  {
-    name:'Lifelong Learning',
-    image:lifelong,
-    public_url:'https://www.credly.com/badges/2448e382-69f6-4a94-802e-1474486a3e4e/public_url',
-    description: "This badge has been issued to the candidates who have demonstrated their unwavering commitment to lifelong learning, which is vitally important in today's ever-changing and expanding digital world. It also identifies the qualities of an open, disciplined, and constantly evolving mind, capable of using and contributing knowledge to develop a more equal and better world.",
-    tags: [
-      {
-          name: "lifelong learning",
-          color: "text-green",
-      },
-      {
-          name: "carrer development",
-          color: "pink-text-gradient",
-      },
-      {
-        name: "certiprof",
-        color: "blue-text-gradient",
       },
       
     ],
@@ -626,6 +678,27 @@ const certifications = [
       
     ],
   },
+  {
+    name:'Lifelong Learning',
+    image:lifelong,
+    public_url:'https://www.credly.com/badges/2448e382-69f6-4a94-802e-1474486a3e4e/public_url',
+    description: "This badge has been issued to the candidates who have demonstrated their unwavering commitment to lifelong learning, which is vitally important in today's ever-changing and expanding digital world. It also identifies the qualities of an open, disciplined, and constantly evolving mind, capable of using and contributing knowledge to develop a more equal and better world.",
+    tags: [
+      {
+          name: "lifelong learning",
+          color: "text-green",
+      },
+      {
+          name: "carrer development",
+          color: "pink-text-gradient",
+      },
+      {
+        name: "certiprof",
+        color: "blue-text-gradient",
+      },
+      
+    ],
+  },
   
 ];
 
@@ -687,6 +760,8 @@ const headers = {
     certification:{
       title:'Mis Certificaciones', 
       subtitle: 'E insignias',
+      subtext:'Codewars es una comunidad educativa de programación de sistemas. En la plataforma, los desarrolladores de software participan en desafíos de programación conocidos como kata. Estos ejercicios entrenan un rango de habilidades en una variedad de lenguajes de programación y se completan dentro de un ambiente de desarrollo integrado en línea, en el que los usuarios tienen la posibilidad de ganar rangos y honor.',
+      subtext2:' Echa un vistazo a mi perfil y a los problemas que he resuelto!',
       text:[
         "Estas son unas de mis cerficaciones que he obtenido en sitios online, desde AWS cloud foundations, hasta insignias de Codewars, por favor, visita mi perfil en cada uno de estos sitios para conocer más sobre mi trabajo."
         
@@ -724,5 +799,5 @@ const headers = {
     },
   }
   
-  export { services, technologies, experiences, testimonials, projects, heroText, headers, contactHeaders, certifications};
+  export { services, technologies, experiences, testimonials, projects, heroText, headers, contactHeaders, badges2, certifications};
   

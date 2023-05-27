@@ -1,4 +1,13 @@
 import {
+  codewarsB,
+  codewarsB2,
+
+  githubB,
+  peopleT1,
+  codewars,
+  freecode1,
+  freecode2,
+  freecode3,
   iiot,
   cyberops,
   scrum,
@@ -30,6 +39,8 @@ import {
   jobit,
   tripguide,
   threejs,
+  cert_js,
+  cert_api,
   ibt,
   apdevs,
   workana,
@@ -348,7 +359,7 @@ const testimonials = [
     name: "Andrés García",
     designation: " Software Engineer | Flutter Developer | Vue.js Developer ",
     company: "IBT",
-    image: "https://media.licdn.com/dms/image/C5603AQG-aQa7eaGGYQ/profile-displayphoto-shrink_400_400/0/1653275025311?e=1690416000&v=beta&t=3c_7vziJ3QwHlTy70ViMpZPF7e47Y1UoBL8UCp5oRLs",
+    image: peopleT1,
   },
   
 ];
@@ -460,6 +471,58 @@ const certifications = [
       
     ],
   },
+  
+  //
+  //
+  //https://www.freecodecamp.org/luismartinez
+  //https://www.codewars.com/users/luismartinezkyb
+  
+  {
+    name:'JavaScript Algorithms and Data Structures',
+    image:freecode2,
+    public_url:'https://www.freecodecamp.org/certification/luismartinez/javascript-algorithms-and-data-structures',
+    description: `Developer Certification, representing approximately 300 hours of coursework.`,
+    tags: [
+      {
+          name: "javascript",
+          color: "text-green",
+      },
+      {
+          name: "algorithms",
+          color: "pink-text-gradient",
+      },
+      {
+        name: "data-structures",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "ES6+",
+        color: "green-text-gradient",
+      },
+      
+    ],
+  },
+  {
+    name:'Back End Development and APIs',
+    image:freecode2,
+    public_url:'https://www.freecodecamp.org/certification/luismartinez/back-end-development-and-apis',
+    description: "Developer Certification, representing approximately 300 hours of coursework.",
+    tags: [
+      {
+          name: "APIs",
+          color: "text-green",
+      },
+      {
+          name: "Backend",
+          color: "pink-text-gradient",
+      },
+      {
+        name: "mongodb",
+        color: "blue-text-gradient",
+      },
+      
+    ],
+  },
   {
     name:'Cisco CyberOps Associate',
     image:cyberops,
@@ -481,27 +544,6 @@ const certifications = [
       {
         name: "cybersecurity",
         color: "green-text-gradient",
-      },
-      
-    ],
-  },
-  {
-    name:'Lifelong Learning',
-    image:lifelong,
-    public_url:'https://www.credly.com/badges/2448e382-69f6-4a94-802e-1474486a3e4e/public_url',
-    description: "This badge has been issued to the candidates who have demonstrated their unwavering commitment to lifelong learning, which is vitally important in today's ever-changing and expanding digital world. It also identifies the qualities of an open, disciplined, and constantly evolving mind, capable of using and contributing knowledge to develop a more equal and better world.",
-    tags: [
-      {
-          name: "lifelong learning",
-          color: "text-green",
-      },
-      {
-          name: "carrer development",
-          color: "pink-text-gradient",
-      },
-      {
-        name: "certiprof",
-        color: "blue-text-gradient",
       },
       
     ],
@@ -614,6 +656,21 @@ const contactHeaders= [
   'See the magic!',
   'Back to lite mode'
 ]
+const badges2 = [
+  {
+    title: "Codewars Solutions",
+    icon: codewarsB,
+    public_url:'https://www.codewars.com/users/luismartinezkyb',
+    image:codewars
+  },
+  {
+    title: "Github Stats",
+    icon: githubB,
+    public_url:'https://github.com/luismartinezkyb/codewars',
+    image:github
+  },
+  
+];
 
 const headers = {
   me:{
@@ -662,6 +719,8 @@ const headers = {
   certification:{
     title:'My Certifications', 
     subtitle: 'AND BADGES',
+    subtext:'Codewars is an educational community for computer programming. On the platform, software developers train on programming challenges known as kata. These discrete programming exercises train a range of skills in a variety of programming languages, and are completed within an online integrated development environment.[1][2] On Codewars the community and challenge progression is gamified, with users earning ranks and honor for completing kata, contributing kata, and quality solutions.',
+    subtext2:'Check out my profile and solutions!',
     text:[
       "This are some of the certifications i have, from aws badges to Codewars and freecodecamp certifications and badges, please, visit each website to know more about my profile"
     ]
@@ -697,4 +756,4 @@ const headers = {
   },
 }
 
-export { services, technologies, experiences, testimonials, projects, heroText, headers, contactHeaders, certifications};
+export { services, technologies, experiences, testimonials, projects, heroText, headers, contactHeaders, certifications, badges2};

@@ -99,7 +99,32 @@ const ccna='https://raw.githubusercontent.com/luismartinezkyb/repo_images_me/mai
 const academyaws='https://raw.githubusercontent.com/luismartinezkyb/repo_images_me/main/academyaws.png'
 const iiot='https://raw.githubusercontent.com/luismartinezkyb/repo_images_me/main/iiot.png'
 
+
+const cert_js='https://raw.githubusercontent.com/luismartinezkyb/repo_images_me/main/cert_js.png'
+const cert_api='https://raw.githubusercontent.com/luismartinezkyb/repo_images_me/main/cert_api.png'
+const codewars='https://raw.githubusercontent.com/luismartinezkyb/repo_images_me/main/codewars.png'
+const freecode1='https://raw.githubusercontent.com/luismartinezkyb/repo_images_me/main/freecode1.png'
+const freecode2='https://raw.githubusercontent.com/luismartinezkyb/repo_images_me/main/freecode4.png'
+const freecode3='https://raw.githubusercontent.com/luismartinezkyb/repo_images_me/main/freecode3.png'
+
+const peopleT1 = 'https://media.licdn.com/dms/image/D4E03AQF58N5oav_GWw/profile-displayphoto-shrink_800_800/0/1685117075070?e=1690416000&v=beta&t=o3IFQuco9akWXauefWzWMnN_OyB9Yn1RwNaEwrFHvAk';
+const codewarsB= 'https://www.codewars.com/users/luismartinezkyb/badges/large'
+const codewarsB2= 'https://www.codewars.com/users/luismartinezkyb/badges/small'
+
+const githubB='https://github-readme-stats.vercel.app/api?username=luismartinezkyb&hide=prs'
+
 export {
+  codewarsB,
+  codewarsB2,
+
+  githubB,
+  peopleT1,
+  freecode3,
+  codewars,
+  freecode1,
+  freecode2,
+  cert_api,
+  cert_js,
   iiot,
   cyberops,
   scrum,
