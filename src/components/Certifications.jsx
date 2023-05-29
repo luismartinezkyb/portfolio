@@ -128,10 +128,13 @@ const Certifications = () => {
       </div>
       
       <div className="items-center justify-center flex flex-row mt-20">
-        <a className='  bg-blue-gray-500 py-3 px-8 flex-row outline-none w-fit text-white font-bold shadow-md shadow-primary rounded-xl'>
-          {constants.headers.certification.subtext2} 
-          <img src={codewars} alt="codewars" className="w-[21px] object-contain" />
-        </a>
+        <a onClick={()=>window.open('https://www.codewars.com/users/luismartinezkyb/completed_solutions', '_blank')} className="inline-flex items-center justify-center p-5 text-base font-medium bg-blue-gray-500 py-3 px-8 outline-none w-fit text-white  shadow-md shadow-primary rounded-xl hover:text-gray-900 hover:bg-gray-100 dark:text-gray-400">
+          <img src={codewars} alt="codewars" className=" w-[21px] object-contain mr-3" />
+          
+          <span className="w-full">{constants.headers.certification.subtext2} </span>
+          <svg aria-hidden="true" className="w-6 h-6 ml-3" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fillRule="evenodd" d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z" clipRule="evenodd"></path></svg>
+        </a> 
+        
       </div>
       <div className='mt-20 flex flex-col w-[80%] lg:w-full lg:flex-row  gap-10 items-center justify-center'>
         
@@ -141,6 +144,18 @@ const Certifications = () => {
           </ServiceCard>
         ))}
       </div>
+      <div className="w-full flex flex-row justify-center mt-10">
+              <ul className="list-none mt-4 grid grid-cols-1 md:grid-cols-2 lg:flex lg:flex-row gap-4">
+                {constants.contact2.links.map((linkItem, index)=>(
+                  <li key={index} className={`flex-row flex font-poppins font-normal text-[16px] leading-[24px] text-dimWhite break-all hover:text-secondary cursor-pointer ${index!== constants.footerLinks.contact.links.length-1 ? 'mb-4': 'mb-0'} flex flex-row gap-2`}>
+                    <img src={linkItem.icon} alt={linkItem.name} className="w-[21px] object-contain"/>
+                    <a  target={linkItem.link==='#contact'?'_self':"_blank"} href={linkItem.link==='#'?'#contact':linkItem.link}>{linkItem.name}</a>
+                  </li>
+                ))}
+              </ul>
+            
+          
+        </div>
       
     </>
   );

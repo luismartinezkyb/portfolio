@@ -12,7 +12,7 @@ export default function App() {
 
   useEffect(() =>{
     const lite_version = localStorage.getItem('version')
-    console.log(lite_version)
+    
 
     if(lite_version===null){
       setVersion('lite');
@@ -30,17 +30,17 @@ export default function App() {
     if(version==='normal'){
       setVersion('lite');
       localStorage.setItem('version','lite');
-      console.log("you've just changed the version to lite")
+      
     }else{
       window.location.hash = '#contact';
       window.location.reload();
       setVersion('normal');
       localStorage.setItem('version','normal');
-      console.log("you've just changed the version normal")
+      
     }
     
   }
-  console.log(version)
+  
   
   return (
     <BrowserRouter>

@@ -2,7 +2,7 @@ import React, {useContext} from 'react'
 import {motion} from 'framer-motion';
 import { me2, me_mountain } from '../assets';
 import { styles, layout } from '../styles';
-import { ComputersCanvas } from './canvas';
+
 import {fadeIn, slideIn} from '../utils/motion';
 import { LanguageContext } from '../context/LanguageContext';
 

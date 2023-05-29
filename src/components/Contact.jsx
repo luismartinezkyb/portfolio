@@ -12,6 +12,7 @@ import { LanguageContext } from '../context/LanguageContext';
 
 
 const Contact= ({props})=> {
+  const [statusDisabled, setStatusDisabled] = useState(false)
   
   const formref = useRef();
   const {constants} = useContext(LanguageContext);
@@ -25,6 +26,18 @@ const Contact= ({props})=> {
     message:'',
   })
 
+  // useEffect(() =>{
+  //   const btnpressed = localStorage.getItem('btnpressed')
+  //   console.log(btnpressed)
+
+  //   if(btnpressed===null){
+  //     setStatusDisabled(false);
+  //     localStorage.setItem('btnpressed','false');
+  //   }else{
+      
+  //     setStatusDisabled(btnpressed==='true'?true:false);
+  //   }
+  // },[])
 
   const [loading, setLoading] = useState(false);
 
@@ -48,18 +61,19 @@ const Contact= ({props})=> {
           setLoading(false);
         }
         else if(data.message==='success'){
-          toast(`Se ha enviado el correo correctamente`, {theme:'dark', position:"bottom-right"});
+          toast(constants.messageSuccess, {theme:'dark', position:"bottom-right"});
           setForm({
             name:'',
             email:'',
             message:'',
           })
           setLoading(false);
+          setStatusDisabled(true);
         }
       }
     }
     catch(err){
-        generateError('No se pudo enviar el mensaje, intente de nuevo')
+        generateError(constants.messageError)
         setLoading(false);
     }
   }
@@ -114,6 +128,7 @@ const Contact= ({props})=> {
           </label>
           <button 
             type='submit'
+            disabled={statusDisabled}
             onSubmit={handleSubmit}
             className=' bg-blue-gray-500 py-3 px-8 outline-none w-fit text-white font-bold shadow-md shadow-primary rounded-xl'>
             {loading? 'Sending...': 'Send'}

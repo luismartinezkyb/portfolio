@@ -1,7 +1,8 @@
 import {
   codewarsB,
   codewarsB2,
-
+  resumeEn,
+  resumeEs,
   githubB,
   peopleT1,
   freecode3,
@@ -397,6 +398,7 @@ const services = [
       designation: " Software Engineer | Flutter Developer | Vue.js Developer ",
       company: "IBT",
       image: peopleT1,
+      link:'https://www.linkedin.com/in/andresgardev/'
     },
     
   ];
@@ -792,12 +794,43 @@ const headers = {
       title:'Footer', 
       subtitle: 'Please',
       text:[
-        'Este sitio web está hecho con ReactJs y TailwindCss',
+        'Este sitio web está hecho con ReactJs + Vite + TailwindCss y no te rastrea',
         '2023© Luis Martinez. Todos los derechos reservados.'
       ],
 
     },
   }
-  
-  export { services, technologies, experiences, testimonials, projects, heroText, headers, contactHeaders, badges2, certifications};
+  const contact2={
+    title: "Contáctame",
+    links: [
+        {
+            name: "luismartinezjpg@gmail.com",
+            icon: gmail,
+            link: "mailto:luismartinezjpg@gmail.com",
+        },
+        
+        {
+            name: "Pídemelo por correo",
+            icon:phone,
+            link: "#contact",
+        },
+        {
+            name: "LinkedIn",
+            icon:linkedin,
+            link: "https://www.linkedin.com/in/luis-martinez-kyb/"
+        },
+        {
+          name: "Ve mi Currículum",
+          icon:logo,
+          link: resumeEs,
+        },
+        
+        
+        
+    ],
+}
+
+const messageSuccess='Se ha enviado el correo correctamente!'
+const messageError='No se pudo enviar el mensaje, intente de nuevo.'
+export {messageSuccess, messageError, services, technologies, experiences, testimonials, projects, heroText, headers, contactHeaders, badges2, certifications, contact2};
   

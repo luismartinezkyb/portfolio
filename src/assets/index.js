@@ -113,7 +113,12 @@ const codewarsB2= 'https://www.codewars.com/users/luismartinezkyb/badges/small'
 
 const githubB='https://github-readme-stats.vercel.app/api?username=luismartinezkyb&hide=prs'
 
+const resumeEn="https://raw.githubusercontent.com/luismartinezkyb/repo_images_me/main/luis_martinez_resume.jpg";
+const resumeEs='https://raw.githubusercontent.com/luismartinezkyb/repo_images_me/main/luis_martinez_cv.jpg'
+
 export {
+  resumeEn,
+  resumeEs,
   codewarsB,
   codewarsB2,
 

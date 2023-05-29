@@ -9,7 +9,7 @@ const Footer = () =>{
   
   const {constants} = useContext(LanguageContext)
 
-  console.log(constants.headers.footer.text[0])
+  
   return (
     <section className={`${styles.paddingX} ${styles.paddingY} flex-col bg-tertiary`}>
       <div className={`${styles.flexStart} md:flex-row flex-col mb-8 w-full`}>
@@ -19,7 +19,7 @@ const Footer = () =>{
           {constants.headers.footer.text[0]}
           </p>
         </div>  
-        <div className="flex-[1.5] w-full flex flex-row justify-start flex-wrap md:mt-0 mt-10">
+        <div className="flex-[1.5] w-full flex flex-row justify-start md:justify-center flex-wrap md:mt-0 mt-10">
             <div className="flex flex-col ss:my-0 my-4 min-w-[150px]" >
               <h4 className="font-poppins font-medium text-[18px] text-white leading-[27px]"><span className="text-[#915eff]">{constants.footerLinks.preview.title}</span></h4>
               <ul className="list-none mt-4">
@@ -33,7 +33,7 @@ const Footer = () =>{
           
         </div>
 
-        <div className="flex-[1.5] w-full flex flex-row justify-start flex-wrap md:mt-0 mt-10">
+        <div className="flex-[1.5] w-full flex flex-row justify-start md:justify-center flex-wrap md:mt-0 mt-10">
             <div className="flex flex-col ss:my-0 my-4 min-w-[150px]" >
               <h4 className="font-poppins font-medium text-[18px] text-white leading-[27px]"><span className="text-[#915eff]">{constants.footerLinks.contact.title}</span></h4>
               <ul className="list-none mt-4">
@@ -58,7 +58,7 @@ const Footer = () =>{
         </p>
         <div className="flex flex-row md:mt-0 mt-6">
           {socialMedia.map((social, index)=>(
-            <img key={social.id} src={social.icon} alt={social.id} className={`w-[21px] h-[21px] object-contain cursor-pointer ${index!==socialMedia.length-1?'mr-6':'mr-0'}`}/>
+            <img key={social.id} src={social.icon} alt={social.id} className={`w-[21px] h-[21px] object-contain cursor-pointer ${index!==socialMedia.length-1?'mr-6':'mr-0'}`} onClick={()=>window.open(social.link, '_blank')}/>
           ))}
 
         </div>
