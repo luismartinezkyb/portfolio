@@ -11,9 +11,11 @@ import CanvasLoader from "./Loader";
 import Me from './Me';
 import Certifications from './Certifications';
 import Footer from "./Footer";
+import Hobbies from './Hobbies';
 
 
 export {
+  Hobbies,
   Me,
   Hero,
   Navbar,

@@ -291,6 +291,10 @@ const services = [
       name: "Firebase",
       icon: firebase,
     },
+    
+  ];
+
+  const tech2 = [
     {
       name: "GNU",
       icon: gnu,
@@ -329,7 +333,7 @@ const services = [
       name: "GraphQL",
       icon: graphql,
     },
-  ];
+  ]
   
   const experiences = [
     {

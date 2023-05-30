@@ -256,6 +256,10 @@ const technologies = [
     name: "Firebase",
     icon: firebase,
   },
+  
+];
+
+const tech2 =[
   {
     name: "GNU",
     icon: gnu,
@@ -294,7 +298,7 @@ const technologies = [
     name: "GraphQL",
     icon: graphql,
   },
-];
+]
 
 const experiences = [
   {
