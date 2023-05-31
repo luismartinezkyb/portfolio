@@ -1,6 +1,6 @@
 import React, {useContext} from 'react'
 import {motion} from 'framer-motion';
-import { me2, me_mountain } from '../assets';
+import { me2, imageMe, imageMe2 } from '../assets';
 import { styles, layout } from '../styles';
 
 import {fadeIn, slideIn} from '../utils/motion';
@@ -24,7 +24,7 @@ export default function Hero() {
             {constants.heroText.map((e, i)=>(
               <div key={i}>
               <p>{e}</p>
-              <br className='md:block hidden'/>
+              
               </div>
             ))}
               
@@ -32,8 +32,8 @@ export default function Hero() {
           </div>
         </div>
           
-        <motion.div variants={slideIn("right", "tween", 0.2, 1)} className='w-full  justify-center items-center flex flex-1 '>
-          <img src={me2} alt="me2" className="rounded-3xl object-contain xs:w-[350px] sm:w-[400px] md:w-50 lg:w-[400px] opacity-90"/>  
+        <motion.div variants={slideIn("right", "tween", 0.2, 1)} className='mt-2 w-full justify-center items-center flex flex-1 '>
+          <img src={imageMe2} alt="me2" className="rounded-3xl object-contain w-[250px] sm:w-[350px] lg:w-[450px] opacity-90"/>  
         </motion.div>
         
       </div>

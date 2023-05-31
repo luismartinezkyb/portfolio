@@ -291,6 +291,23 @@ const services = [
       name: "Firebase",
       icon: firebase,
     },
+    {
+      name: "Tailwind CSS",
+      icon: tailwind,
+    },
+    
+    {
+      name: "git",
+      icon: git,
+    },
+    {
+      name: "Flutter",
+      icon: flutter,
+    },
+    {
+      name: "docker",
+      icon: docker,
+    },
     
   ];
 
@@ -836,5 +853,5 @@ const headers = {
 
 const messageSuccess='Se ha enviado el correo correctamente!'
 const messageError='No se pudo enviar el mensaje, intente de nuevo.'
-export {messageSuccess, messageError, services, technologies, experiences, testimonials, projects, heroText, headers, contactHeaders, badges2, certifications, contact2};
+export {tech2, messageSuccess, messageError, services, technologies, experiences, testimonials, projects, heroText, headers, contactHeaders, badges2, certifications, contact2};
   

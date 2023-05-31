@@ -256,7 +256,23 @@ const technologies = [
     name: "Firebase",
     icon: firebase,
   },
+  {
+    name: "Tailwind CSS",
+    icon: tailwind,
+  },
   
+  {
+    name: "git",
+    icon: git,
+  },
+  {
+    name: "Flutter",
+    icon: flutter,
+  },
+  {
+    name: "docker",
+    icon: docker,
+  },
 ];
 
 const tech2 =[
@@ -793,5 +809,5 @@ const contact2={
 
 const messageSuccess='The email was sent successfully!'
 const messageError='An error has occurred, please try again.'
-export {messageSuccess, messageError,  services, technologies, experiences, testimonials, projects, heroText, headers, contactHeaders, badges2, certifications, contact2};
+export {tech2, messageSuccess, messageError,  services, technologies, experiences, testimonials, projects, heroText, headers, contactHeaders, badges2, certifications, contact2};
   

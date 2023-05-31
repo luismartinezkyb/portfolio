@@ -12,9 +12,10 @@ import Me from './Me';
 import Certifications from './Certifications';
 import Footer from "./Footer";
 import Hobbies from './Hobbies';
-
+import Tech2 from './Tech2';
 
 export {
+  Tech2,
   Hobbies,
   Me,
   Hero,

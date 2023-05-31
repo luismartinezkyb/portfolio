@@ -116,7 +116,13 @@ const githubB='https://github-readme-stats.vercel.app/api?username=luismartinezk
 const resumeEn="https://raw.githubusercontent.com/luismartinezkyb/repo_images_me/main/luis_martinez_resume.jpg";
 const resumeEs='https://raw.githubusercontent.com/luismartinezkyb/repo_images_me/main/luis_martinez_cv.jpg'
 
+const imageMe = 'https://raw.githubusercontent.com/luismartinezkyb/repo_images_me/main/me12.jpg'
+
+const imageMe2 = 'https://raw.githubusercontent.com/luismartinezkyb/repo_images_me/main/me123.jpg'
+
 export {
+  imageMe2,
+  imageMe,
   resumeEn,
   resumeEs,
   codewarsB,

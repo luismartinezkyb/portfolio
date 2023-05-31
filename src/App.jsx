@@ -1,7 +1,8 @@
 import React, {useState, useContext, useEffect} from 'react'
 import { BrowserRouter } from 'react-router-dom';
-import {About, Contact, Works, Tech, Hero, Navbar, StarsCanvas, Experience, Feedbacks, Footer, Me, Certifications, Hobbies} from './components';
+import {About, Contact, Works, Tech, Hero, Navbar, StarsCanvas, Experience, Feedbacks, Footer, Me, Certifications, Hobbies, Tech2} from './components';
 import "react-toastify/dist/ReactToastify.css";
+
 
 
 
@@ -54,6 +55,7 @@ export default function App() {
         <About/>
         <Experience/>
         <Tech/>
+        
         <Works/>
         <Certifications/>
         <Hobbies/>
