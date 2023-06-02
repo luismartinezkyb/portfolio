@@ -9,6 +9,7 @@ import {
   freecode1,
   freecode2,
   freecode3,
+  
   iiot,
   cyberops,
   scrum,
@@ -151,7 +152,7 @@ export const footerLinks = {
         {
           name: "See my resume",
           icon:logo,
-          link: "https://raw.githubusercontent.com/luismartinezkyb/repo_images_me/main/luis_martinez_resumes.jpg",
+          link: resumeEn,
         },
         {
           name: "GitHub profile",
